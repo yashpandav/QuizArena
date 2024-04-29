@@ -1,0 +1,46 @@
+    
+.navbar{
+    height: 14vh;
+    /* background-color: rgba(236, 24, 24, 0.245); */
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo{
+    border-radius: 50%;
+    width: 5vw;
+}
+
+nav{
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#links{
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn{
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin-left: 10rem;
+}
+
+.btn > #links > h6{
+    cursor: pointer;
+    text-align: center;
+    margin-top: 3px;
+    margin-right: 19px;
+    margin-left: 19px;
+}

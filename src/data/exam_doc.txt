@@ -1,0 +1,855 @@
+1. Which of the following is a programming language?
+
+a) Python
+b) Photoshop
+c) Microsoft Word
+d) Adobe Illustrator
+
+Answer: a) Python.
+
+2. Which programming paradigm emphasizes on writing code that is easy to read and maintain?
+
+a) Procedural programming
+b) Object-oriented programming
+c) Functional programming
+d) Structured programming
+
+Answer: b) Object-oriented programming.
+
+3. What is the term used for a block of code that is executed repeatedly until a certain condition is met?
+
+a) Function
+b) Loop
+c) Condition
+d) Variable
+
+Answer: b) Loop.
+
+4. Which data structure is used for storing a collection of elements in a non-linear fashion?
+
+a) Array
+b) Stack
+c) Queue
+d) Tree
+
+5. Which operator is used for exponentiation in most programming languages?
+
+a) ^
+b) *
+c) %
+d) **
+
+Answer: d) **.
+
+6. Which programming language is used for developing Android apps?
+
+a) Java
+b) C#
+c) Python
+d) Swift
+
+Answer: a) Java.
+
+7. Which of the following is not a valid variable name in most programming languages?
+
+a) myVariable
+b) 123Variable
+c) _myVariable
+d) my_variable
+
+Answer: b) 123Variable.
+
+8. Which of the following is a type of sorting algorithm?
+
+a) Binary search
+b) Quick sort
+c) Depth-first search
+d) Breadth-first search
+
+Answer: b) Quick sort.
+
+9. Which of the following is not a web browser?
+
+a) Chrome
+b) Safari
+c) Firefox
+d) Photoshop
+
+Answer: d) Photoshop.
+
+10. Which keyword is used for defining a function in most programming languages?
+
+a) def
+b) fun
+c) sub
+d) function
+
+Answer: a) def.
+
+11. Which of the following is not a data type in most programming languages?
+
+a) Integer
+b) Float
+c) Double
+d) String
+
+Answer: c) Double.
+
+12. Which programming language is used for developing iOS apps?
+
+a) Java
+b) C#
+c) Python
+d) Swift
+
+Answer: d) Swift.
+
+13. Which of the following is not a relational operator in most programming languages?
+
+a) =
+b) ==
+c) !=
+d) ++
+
+Answer: d) ++.
+
+14. Which data structure is used for implementing a Last-In-First-Out (LIFO) behavior?
+
+a) Queue
+b) Stack
+c) Tree
+d) Linked list
+
+Answer: b) Stack.
+
+15. Which of the following is not a programming language?
+
+a) HTML
+b) CSS
+c) JavaScript
+d) MySQL
+
+Answer: d) MySQL.
+
+16. Which of the following is a type of conditional statement?
+
+a) If statement
+b) For loop
+c) While loop
+d) Switch statement
+
+Answer: a) If statement.
+
+17. Which of the following is a type of database?
+
+a) Relational database
+b) Object-oriented database
+c) NoSQL database
+d) All of the above
+
+Answer: d) All of the above.
+
+18. Which of the following is a type of computer network?
+
+a) Local Area Network (LAN)
+b) Wide Area Network (WAN)
+c) Metropolitan Area Network (MAN)
+d) All of the above
+
+Answer: d) All of the above.
+
+
+19. Which of the following is a type of web development framework?
+
+a) Django
+b) React
+c) Angular
+d) All of the above
+
+Answer: d) All of the above.
+
+20. Which of the following is a type of web hosting?
+
+a) Shared hosting
+b) Dedicated hosting
+c) Virtual Private Server (VPS) hosting
+d) All of the above
+
+Answer: d) All of the above.
+
+21. Which of the following is not a data structure?
+
+a) Stack
+b) Queue
+c) Function
+d) Linked list
+
+Answer: c) Function
+
+22. Which programming paradigm emphasizes on writing code as a series of mathematical functions?
+
+a) Procedural programming
+b) Object-oriented programming
+c) Functional programming
+d) Structured programming
+
+Answer: c) Functional programming.
+
+23. Which of the following is a type of database management system?
+
+a) MySQL
+b) Oracle
+c) Microsoft SQL Server
+d) All of the above
+
+Answer: d) All of the above.
+
+24. Which of the following is a type of cloud computing service?
+
+a) Infrastructure as a Service (IaaS)
+b) Platform as a Service (PaaS)
+c) Software as a Service (SaaS)
+d) All of the above
+
+Answer: d) All of the above.
+
+25. Which of the following is not a commonly used programming language for web development?
+
+a) Java
+b) Ruby
+c) Python
+d) Swift
+
+Answer: d) Swift.
+
+26. Which of the following is used for creating and managing virtual environments in Python?
+
+a) pip
+b) venv
+c) virtualenv
+d) conda
+
+Answer: b) venv.
+
+27. Which of the following is a popular open-source database management system?
+
+a) MongoDB
+b) Oracle
+c) Microsoft SQL Server
+d) IBM DB2
+
+Answer: a) MongoDB.
+
+28. Which of the following is not a commonly used web development framework in JavaScript?
+
+a) React
+b) Angular
+c) Vue.js
+d) Django
+
+Answer: d) Django.
+
+29. Which of the following is not a commonly used programming language for artificial intelligence (AI) and machine learning (ML)?
+
+a) Python
+b) R
+c) C++
+d) Java
+
+Answer: d) Java.
+
+30. Which of the following is a type of loop in programming?
+
+a) For loop
+b) While loop
+c) Do-while loop
+d) All of the above
+
+Answer: d) All of the above.
+
+31. Which of the following is a commonly used markup language for web development?
+
+a) HTML
+b) XML
+c) JSON
+d) YAML
+
+Answer: a) HTML.
+
+32. Which of the following is not a commonly used relational database management system?
+
+a) MySQL
+b) PostgreSQL
+c) MongoDB
+d) Oracle
+
+Answer: c) MongoDB.
+
+33. Which of the following is a commonly used version control system?
+
+a) Git
+b) SVN
+c) Mercurial
+d) All of the above
+
+Answer: d) All of the above.
+
+34. Which of the following is a commonly used integrated development environment (IDE) for Python?
+
+a) Visual Studio Code
+b) PyCharm
+c) Eclipse
+d) Sublime Text
+
+Answer: b) PyCharm.
+
+35. Which of the following is a commonly used web application framework for Ruby?
+
+a) Django
+b) Flask
+c) Ruby on Rails
+d) Express.js
+
+Answer: c) Ruby on Rails.
+
+36. Which of the following is a type of web server?
+
+a) Apache HTTP Server
+b) Nginx
+c) Microsoft IIS
+d) All of the above
+
+Answer: d) All of the above.
+
+37. Which of the following is a commonly used object-oriented programming language?
+
+a) C
+b) Python
+c) Perl
+d) Shell
+
+Answer: b) Python.
+
+38. Which of the following is a commonly used programming language for game development?
+
+a) Java
+b) Python
+c) C#
+d) Ruby
+
+Answer: c) C#.
+
+39. Which of the following is a commonly used programming language for mobile app development?
+
+a) Java
+b) Swift
+c) Kotlin
+d) All of the above
+
+Answer: d) All of the above.
+
+40. Which of the following is a commonly used web development framework for PHP?
+
+a) Laravel
+b) Flask
+c) Ruby on Rails
+d) Express.js
+
+Answer: a) Laravel.
+
+41. Which of the following is not a commonly used operating system for servers?
+
+a) Windows Server
+b) Linux
+c) macOS
+d) FreeBSD
+
+Answer: c) macOS.
+
+42. Which of the following is a commonly used scripting language for web development?
+
+a) Java
+b) Ruby
+c) Python
+d) JavaScript
+
+Answer: d) JavaScript.
+
+43. Which of the following is a commonly used web development framework for JavaScript?
+
+a) Django
+b) Flask
+c) Ruby on Rails
+d) React
+
+Answer: d) React.
+
+44. Which of the following is a commonly used web development framework for Java?
+
+a) Django
+b) Flask
+c) Ruby on Rails
+d) Spring
+
+Answer: d) Spring. 
+
+45. Which of the following is a commonly used web development framework for Ruby?
+
+a) Django
+b) Flask
+c) Ruby on Rails
+d) Express.js
+
+Answer: c) Ruby on Rails.
+
+46. Which of the following is a commonly used programming language for scientific computing?
+
+a) Java
+b) Python
+c) Ruby
+d) C#
+
+Answer: b) Python.
+
+47. Which of the following is a commonly used programming language for data analysis?
+
+a) Java
+b) Python
+c) Ruby
+d) C++
+
+Answer: b) Python.
+
+48. Which of the following is a commonly used web development framework for Python?
+
+a) Django
+b) Flask
+c) Ruby on Rails
+d) Express.js
+
+Answer: a) Django.
+
+49. Which of the following is a commonly used programming language for server-side web development?
+
+a) JavaScript
+b) Ruby
+c) PHP
+d) All of the above
+
+Answer: d) All of the above.
+
+50. What is the purpose of a loop in programming?
+
+a) To execute a set of instructions a specified number of times.
+b) To terminate the program.
+c) To print output to the console.
+d) To declare variables.
+
+Answer: a) To execute a set of instructions a specified number of times.
+
+2) Which of the following is the correct way of declaring an array?
+
+int javatpoint[10];
+int javatpoint;
+javatpoint{20};
+array javatpoint[10];
+
+
+1. Which data structure follows the Last-In-First-Out (LIFO) principle?
+   a) Queue
+   b) Stack
+   c) Linked List
+   d) Tree
+
+Answer: b) Stack
+
+2. Which of the following is not a linear data structure?
+   a) Stack
+   b) Queue
+   c) Linked List
+   d) Tree
+
+Answer: d) Tree
+
+3. In a binary search tree, which traversal visits the nodes in ascending order?
+   a) Preorder traversal
+   b) In order traversal
+   c) Postorder traversal
+   d) Level order traversal
+
+Answer: b) In order traversal
+
+4. Which sorting algorithm has the worst-case time complexity of O(n^2)?
+   a) Quick sort
+   b) Merge sort
+   c) Bubble sort
+   d) Insertion sort
+
+Answer: c) Bubble sort
+
+
+5. Which data structure uses the concept of “First-In-First-Out” (FIFO)?
+   a) Stack
+   b) Queue
+   c) Tree
+   d) Linked List
+
+Answer: b) Queue
+
+6. Which search algorithm requires the data to be sorted beforehand?
+   a) Linear search
+   b) Binary search
+   c) Depth-first search
+   d) Breadth-first search
+
+Answer: b) Binary search
+
+7. Which data structure is used to implement a priority queue?
+   a) Stack
+   b) Queue
+   c) Heap
+   d) Linked List
+
+Answer: c) Heap
+
+8. Which algorithm is used to find the shortest path in a weighted graph?
+   a) Depth-first search
+   b) Breadth-first search
+   c) Dijkstra’s algorithm
+   d) Prim’s algorithm
+
+Answer: c) Dijkstra’s algorithm
+
+9. Which data structure is used to implement a hash table?
+   a) Stack
+   b) Queue
+   c) Linked List
+   d) Array
+Answer: d) Array
+
+
+10. Which algorithm is used to traverse a graph in a breadth-first manner?
+    a) Dijkstra’s algorithm
+    b) Kruskal’s algorithm
+    c) Breadth-first search
+    d) Depth-first search
+
+Answer: c) Breadth-first search
+
+11. Which data structure allows efficient insertion and deletion at both ends?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Double-ended queue (Deque)
+
+Answer: d) Double-ended queue (Deque)
+
+12. Which sorting algorithm has a time complexity of O(n log n) in the average case?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Merge sort
+
+Answer: d) Merge sort
+
+13. Which data structure is best suited for implementing a recursive algorithm?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Tree
+
+
+Answer: a) Stack
+
+14. Which algorithm is used to find the minimum spanning tree of a graph?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Prim’s algorithm
+
+Answer: d) Prim’s algorithm
+
+15. Which data structure uses the concept of “Last-In-First-Out” (LIFO)?
+    a) Stack
+    b) Queue
+    c) Tree
+    d) Linked List
+
+Answer: b) Queue
+
+16. Which sorting algorithm works by repeatedly swapping adjacent elements if they are in the wrong order?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Merge sort
+
+
+Answer: a) Bubble sort
+
+17. Which data structure is used for implementing a cache with efficient insertion and deletion operations?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Hash table
+Answer: d) Hash table
+
+18. Which algorithm is used to find the shortest path in an unweighted graph?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Prim’s algorithm
+
+Answer: b) Breadth-first search
+
+
+19. Which data structure represents a hierarchical relationship between elements?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Tree
+
+Answer: d) Tree
+
+20. Which sorting algorithm is based on the divide-and-conquer strategy?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Merge sort
+Answer: d) Merge sort
+
+21. Which data structure is used to implement a LIFO system in a computer’s memory?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Array
+
+Answer: a) Stack
+
+22. Which algorithm is used to find the shortest path between all pairs of vertices in a graph?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Floyd-Warshall algorithm
+
+Answer: d) Floyd-Warshall algorithm
+
+23. Which data structure allows efficient insertion and deletion at the beginning and end of the list?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Double-ended linked list
+
+Answer: d) Double-ended linked list
+
+24. Which sorting algorithm has the best average-case time complexity?
+    a) Quick sort
+    b) Merge sort
+    c) Bubble sort
+    d) Insertion sort
+Answer: b) Merge sort
+
+25. Which data structure is used for implementing undo-redo functionality in a text editor?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Heap
+
+Answer: a) Stack
+
+26. Which algorithm is used to find the minimum spanning tree of a graph with weighted edges?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Prim’s algorithm
+
+Answer: d) Prim’s algorithm
+
+27. Which data structure is used for implementing a call stack in programming languages?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Tree
+
+Answer: a) Stack
+
+28. Which sorting algorithm repeatedly selects the smallest element and places it at the beginning of the list?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Merge sort
+Answer: c) Selection sort
+
+
+29. Which algorithm is used to find the longest increasing subsequence in an array?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Longest Increasing Subsequence (LIS) algorithm
+
+Answer: d) Longest Increasing Subsequence (LIS) algorithm
+
+30. Which data structure is used for implementing a cache with efficient retrieval operations?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Hash table
+
+Answer: d) Hash table
+
+31. Which sorting algorithm works by dividing the list into sublists and repeatedly merging them?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Merge sort
+Answer: d) Merge sort
+
+32. Which algorithm is used to find the maximum flow in a network?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Ford-Fulkerson algorithm
+
+Answer: d) Ford-Fulkerson algorithm
+33. Which data structure represents a collection of elements with no particular order?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Set
+
+Answer: d) Set
+
+34. Which sorting algorithm is based on the comparison of adjacent elements and swapping them if necessary?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Quick sort
+
+Answer: a) Bubble sort
+
+
+35. Which algorithm is used to find the topological ordering of a directed acyclic graph (DAG)?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Topological sorting algorithm
+
+Answer:  d) Topological sorting algorithm
+
+36. Which data structure is used for implementing a first-in, first-out (FIFO) system?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Array
+Answer:  b) Queue
+
+37. Which sorting algorithm works by repeatedly selecting the maximum element and placing it at the end of the list?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Quick sort
+
+Answer: c) Selection sort
+38. Which algorithm is used to find the articulation points in a graph?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Tarjan’s algorithm
+
+Answer: d) Tarjan’s algorithm
+
+
+
+39. Which data structure is used for implementing a priority queue with efficient retrieval of the highest priority element?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Heap
+
+Answer: c) Linked List
+
+40. Which sorting algorithm is known for its efficiency in sorting large datasets?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Radix sort
+
+Answer: d) Radix sort
+
+41. Which algorithm is used to find the strongly connected components in a directed graph?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Tarjan’s algorithm
+
+Answer: a) Depth-first search
+
+42. Which data structure is used for implementing a balanced binary search tree?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) AVL tree
+Answer: d) AVL tree
+
+43. Which sorting algorithm divides the list into two sublists, sorted and unsorted, and repeatedly inserts elements into the sorted sublist?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Quick sort
+
+
+Answer: b) Insertion sort
+
+44. Which algorithm is used to find the articulation bridges in a graph?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Tarjan’s algorithm
+
+Answer: d) Tarjan’s algorithm
+
+45. Which data structure is used for implementing a lookup table with efficient key-value pair retrieval?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Hash table
+
+Answer: d) Hash table
+
+46. Which sorting algorithm is based on the comparison of elements separated by a fixed gap?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Shell sort
+
+Answer: d) Shell sort
+
+47. Which algorithm is used to find the maximum sum subarray in an array?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Kadane’s algorithm
+Answer: d) Kadane’s algorithm
+48. Which data structure is used for implementing a self-balancing binary search tree?
+    a) Stack
+    b) Queue
+    c) Linked List
+    d) Red-Black tree
+
+Answer: d) Red-Black tree
+
+49. Which sorting algorithm is based on the comparison of adjacent elements and swapping them if necessary, but with a time complexity of O(n)?
+    a) Bubble sort
+    b) Insertion sort
+    c) Selection sort
+    d) Counting sort
+
+Answer: d) Counting sort
+
+50. Which algorithm is used to find the longest common subsequence of two sequences?
+    a) Depth-first search
+    b) Breadth-first search
+    c) Dijkstra’s algorithm
+    d) Longest Common Subsequence (LCS) algorithm
+
+Answer: d) Longest Common Subsequence (LCS) algorithm
+
