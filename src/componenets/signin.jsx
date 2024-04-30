@@ -1,6 +1,7 @@
 import './signin.css';
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import { useState } from 'react';
+import { toast } from "react-hot-toast";
 
 export default function Signin() {
     const [showcurrPasswd, setcurrShowPasswd] = useState(false);
@@ -27,21 +28,6 @@ export default function Signin() {
         setfinalShowPasswd((prev) => !prev);
     }
 
-    function submitHandler(event){    
-        if(currPaswd !== confmPasswd) {
-            event.preventDefault();
-        }   
-    else{
-        if (!localStorage.getItem("user")) {
-            localStorage.setItem("user", JSON.stringify({}));
-        }
-        let mainData = JSON.parse(localStorage.getItem("user")) || {};
-        mainData = { ...mainData, [userData.userName]: userData };
-        localStorage.setItem("user", JSON.stringify(mainData));
-        console.log(mainData);
-        }
-    }
-
     function dataChangeHandler(event){
         const {name , value} = event.target;
         setUserData((prev) => {
@@ -62,6 +48,23 @@ export default function Signin() {
         });
     }
 
+    function submitHandler(event){    
+        if(currPaswd !== confmPasswd) {
+            toast.error("Password didn't matched");
+            event.preventDefault();
+        }   
+        else{
+            if (!localStorage.getItem("user")) {
+                localStorage.setItem("user", JSON.stringify({}));
+            }
+            let mainData = JSON.parse(localStorage.getItem("user")) || {};
+            mainData = { ...mainData, [userData.userName]: userData };
+            localStorage.setItem("user", JSON.stringify(mainData));
+            toast.success("Account created successfully");
+        }
+    }
+
+
     return (
         <>
         <div id='signin'>
@@ -71,7 +74,7 @@ export default function Signin() {
                     Start your preparation now
                 </h3>
 
-                <form onSubmit={submitHandler} target='_blank'>
+                <form onSubmit={submitHandler}>
                     <label htmlFor='fn'>First Name <sup>*</sup>
                     </label>
                     <br></br>

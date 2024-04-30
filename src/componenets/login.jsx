@@ -98,7 +98,7 @@ export default function Login(){
                         <button type='button' onClick={() => {setLogin('username')}} className='emailorusername'> username
                         </button></sub>
                 </p>
-                <form onSubmit={submitHandler}>
+                <form onSubmit={submitHandler} >
                     {
                         loginUsing === 'username' ? (
                             <>
