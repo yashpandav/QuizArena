@@ -5,6 +5,17 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    transition: all;
+    animation: sigin 0.4s ease-in-out 0s 1;
+}
+
+@keyframes sigin {
+    0%{
+        transform: scaleX(0%);
+    }
+    100%{
+        transform: scaleX(100%);
+    }
 }
 
 #signupimg{

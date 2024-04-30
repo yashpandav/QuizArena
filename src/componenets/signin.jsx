@@ -1,6 +1,6 @@
 import './signin.css';
 import { FaEyeSlash, FaEye } from "react-icons/fa";
-import { useState , useRef} from 'react';
+import { useState } from 'react';
 
 export default function Signin() {
     const [showcurrPasswd, setcurrShowPasswd] = useState(false);
@@ -60,7 +60,7 @@ export default function Signin() {
                             <label htmlFor='createpasswd'>Create New Password <sup>*</sup></label>
                             <br></br>
                             <input type={showcurrPasswd ? 'text' : 'password'} value={currPaswd} name='createpasswd' onChange={(e) => setCurr(e.target.value)} required />
-                            <button className='passbtn' onClick={currShowPasswdHandler} >
+                            <button type='button' className='passbtn' onClick={currShowPasswdHandler} >
                                 {
                                     !showcurrPasswd ? (
                                         <FaEye/>
@@ -74,7 +74,7 @@ export default function Signin() {
                             <label htmlFor='confmpasswd'>Confirm The Password <sup>*</sup></label>
                             <br></br>
                             <input type={showfinalPasswd ? 'text' : 'password'} value={confmPasswd} name='confmpasswd' onChange={(e) => setConfm(e.target.value)} required />
-                            <button className='passbtn' onClick={finalShowpasswdHandler} >
+                            <button type='button' className='passbtn' onClick={finalShowpasswdHandler} >
                                 {
                                     !showfinalPasswd ? (
                                         <FaEye/>
@@ -86,7 +86,7 @@ export default function Signin() {
                         </div>
                     </div>
                     <hr style={{ backgroundColor: "grey" }}></hr>
-                    <button id='submit'>Create Account</button>
+                    <button type='submit' id='submit'>Create Account</button>
                     <button type='reset'>Reset</button>
                 </form>
             </div>

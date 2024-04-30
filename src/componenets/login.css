@@ -1,0 +1,54 @@
+#login{
+    width: 100vw;
+    height: 76vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    transition: all;
+    animation: login 0.4s ease-in-out 0s 1;
+}
+
+@keyframes login {
+    0%{
+        transform: scaleX(0%);
+    }
+    100%{
+        transform: scaleX(100%);
+    }
+}
+
+#loginimg{
+    margin-top: 10px;
+    margin-left: -50px;
+} 
+
+#loginform{
+    margin-top: 0px;
+    margin-right: 13%;
+}
+
+#loginform > h3{
+    margin-bottom: 1%;
+}
+
+.emailorusername{
+    text-decoration: underline;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+#forgot{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#paraforgot > sub:hover{
+    text-decoration: underline;
+}
