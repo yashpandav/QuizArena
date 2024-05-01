@@ -5,7 +5,8 @@ import Login from "./componenets/login";
 import Signin from "./componenets/signin";
 import Dashboard from "./componenets/dashboard";
 import { useEffect , useState } from "react";
-
+import PrivateRoute from "./componenets/PrivateRoute";
+import { Navigate } from "react-router-dom";
 function App() {
 
   const [isLogin , setLogin] = useState(false);
@@ -14,11 +15,19 @@ function App() {
     <div className="main">
       <Navbar></Navbar>
       <Routes>
-        <Route path = '/' element = {<Home></Home>}></Route>
+        <Route path = '/' element = {<Home isLogin = {isLogin}></Home>}></Route>
         <Route path="/login" element = {<Login isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
         <Route path="/signin" element = {<Signin></Signin>}></Route>
         <Route path="/exam" element = {<exam></exam>}></Route>
-        <Route path="/dashboard" element = {<Dashboard></Dashboard>}></Route>
+        {isLogin ? <Route path="/dashboard" element = {<Dashboard></Dashboard>}></Route> : 
+            <Route path="/login" element = {<Login isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
+        }
+        {/* <Route path='/dashboard' element={
+            <PrivateRoute isLogin={isLogin}>
+                <Dashboard />
+            </PrivateRoute>
+        } /> */}
+        <Route path="*" element = {<Navigate to='/'></Navigate>}></Route>
       </Routes>
     </div> 
   )

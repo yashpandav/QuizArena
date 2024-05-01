@@ -2,10 +2,13 @@ import './login.css';
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import { useState} from 'react';
 import { toast } from "react-hot-toast";
+import { useNavigate } from 'react-router-dom';
 
-export default function Login(){
+export default function Login({isLogin , setLogin}){
+    const navigate = useNavigate();
+
     const [showpaswd, setshow] = useState(false);
-    const [loginUsing , setLogin] = useState('username');
+    const [loginUsing , setLoggedin] = useState('username');
     const [currUser , setCurr] = useState(
         {
             loginId : "",
@@ -71,6 +74,8 @@ export default function Login(){
                     return;
                 }
                 else{
+                    setLogin(true);
+                    navigate('/dashboard');
                     toast.success("Login Success");
                 }
             } 
@@ -80,6 +85,7 @@ export default function Login(){
             event.preventDefault();
         }
     }
+
     
     return(
         <div id='login'>
@@ -93,9 +99,9 @@ export default function Login(){
 
                 <p>
                     <sub>Log In using
-                        <button type='button' onClick={() => {setLogin('email')}} className='emailorusername'>email
+                        <button type='button' onClick={() => {setLoggedin('email')}} className='emailorusername'>email
                         </button>or
-                        <button type='button' onClick={() => {setLogin('username')}} className='emailorusername'> username
+                        <button type='button' onClick={() => {setLoggedin('username')}} className='emailorusername'> username
                         </button></sub>
                 </p>
                 <form onSubmit={submitHandler} >
