@@ -13,12 +13,12 @@ function App() {
 
   return(
     <div className="main">
-      <Navbar></Navbar>
+      <Navbar isLogin = {isLogin}></Navbar>
       <Routes>
         <Route path = '/' element = {<Home isLogin = {isLogin}></Home>}></Route>
         <Route path="/login" element = {<Login isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
-        <Route path="/signin" element = {<Signin></Signin>}></Route>
-        <Route path="/exam" element = {<exam></exam>}></Route>
+        <Route path="/signin" element = {<Signin isLogin = {isLogin}></Signin>}></Route>
+        <Route path="/exam" element = {<exam isLogin = {isLogin}></exam>}></Route>
         {isLogin ? <Route path="/dashboard" element = {<Dashboard></Dashboard>}></Route> : 
             <Route path="/login" element = {<Login isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
         }

@@ -6,8 +6,7 @@ export default function Home({isLogin}){
         <div className="home">
             <div className='text'>
                 <h1>Welcome to QuizArena</h1>
-
-                {isLogin ? 
+                {!isLogin ? 
                             (
                                 <div style={{display : "flex", justifyContent : 'space-between' , alignItems : "center" , flexWrap : "wrap" , marginTop : "13px"}}>
                                 <Link id='links' to = '/signin'>

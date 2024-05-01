@@ -44,3 +44,41 @@ nav{
     margin-right: 19px;
     margin-left: 19px;
 }
+
+#user-account{
+    cursor: pointer;
+    margin-right: -20%;
+    border-radius: 50%;
+    background-color: rgb(27, 26, 26);
+    width: 4.5vw;
+}
+
+.hideAccount{
+    display: none;
+}
+
+.showAccount{
+    width: 10vw;
+    background-color: rgb(27, 26, 26);
+    transition: all;
+    position: absolute;
+    display:block;
+    animation: accountAni 0.2s ease-in 0s 1;
+    left: 77%;    
+    border-radius: 10px;
+}
+
+@keyframes accountAni {
+    0%{
+        transform: translateX(-100%);
+        z-index: -50;
+        transform:translateY(-15%);
+        opacity: 0;
+    }
+    100%{
+        z-index: 10;
+        transform: translateX(14%);
+        transform:translateY(0%);
+        opacity: 100%;
+    }
+}
