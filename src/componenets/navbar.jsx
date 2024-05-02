@@ -1,8 +1,9 @@
 import './navbar.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 
-export default function Navbar({isLogin}){
+export default function Navbar({isLogin , setLogin}){
     const navigate = useNavigate();
     const [accountInfo , setAccount] = useState('hideAccount');
 
@@ -12,6 +13,12 @@ export default function Navbar({isLogin}){
 
     function removeDrop(){
         setAccount('hideAccount');
+    }
+
+    function logoutHandler(){
+        setLogin(false);
+        toast.success("Logout successfully");
+        navigate('/home');
     }
 
     return(
@@ -31,8 +38,8 @@ export default function Navbar({isLogin}){
                         <img id='user-account' src={require('../data/account.png')} alt='account' onClick={accountHandler}></img>
                         <div className={accountInfo}>
                             <p onClick={() => navigate('/dashboard')}>Dashboard</p>
-                            <hr></hr>
-                            <p onClick={() => navigate('/home')}>Logout</p>
+                            <p onClick={() => navigate('/userInfo')}>Account</p>
+                            <p onClick={logoutHandler}>Logout</p>
                         </div>
                     </div>
                     ) :

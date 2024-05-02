@@ -82,3 +82,15 @@ nav{
         opacity: 100%;
     }
 }
+
+.showAccount > p{
+    cursor: pointer;
+    color: white;
+    text-align: left;
+    margin-top: 4.5%;
+    margin-left: 7%;
+}
+
+.showAccount > p:hover{
+    text-decoration: underline;
+}
