@@ -1,69 +1,97 @@
 import './signin.css';
 import { FaEyeSlash, FaEye } from "react-icons/fa";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { toast } from "react-hot-toast";
+import { useNavigate } from 'react-router-dom';
 
 export default function Signin() {
     const [showcurrPasswd, setcurrShowPasswd] = useState(false);
     const [showfinalPasswd, setfinalShowPasswd] = useState(false);
     const [currPaswd , setCurr] = useState('');
     const [confmPasswd , setConfm] = useState('');
+    const [accountMatched , setAccountExist] = useState(false);
+    const navigate = useNavigate();
+    const [userData , setUserData] = useState({
+        fn : "" ,
+        ln : "" ,
+        number : "",
+        email : "" ,
+        confmpasswd : "",
+        userName : ""
+    });
 
-    const [userData , setUserData] = useState(
-        {
-            fn : "" ,
-            ln : "" ,
-            number : "",
-            email : "" ,
-            confmpasswd : "",
-            userName : ""
+    useEffect(() => {
+        const mainData = JSON.parse(localStorage.getItem("user"));
+        let accountExists = false;
+        console.log(mainData)
+        if (mainData) {
+            Object.keys(mainData).forEach(key => {
+                if (userData.email === mainData[key].email || mainData[key].number === userData.number) {
+                    accountExists = true;
+                }
+            });
         }
-    );
+
+        setAccountExist(accountExists);
+    }, [userData.email, userData.number]);
 
     function currShowPasswdHandler() {
-        setcurrShowPasswd((prev) => !prev);
+        setcurrShowPasswd(prev => !prev);
     }
     
-    function finalShowpasswdHandler(){
-        setfinalShowPasswd((prev) => !prev);
+    function finalShowpasswdHandler() {
+        setfinalShowPasswd(prev => !prev);
     }
 
-    function dataChangeHandler(event){
-        const {name , value} = event.target;
-        setUserData((prev) => {
-            if(name === "fn" || name === "ln"){
+    function dataChangeHandler(event) {
+        const { name , value } = event.target;
+        setUserData(prev => {
+            if (name === "fn" || name === "ln") {
                 const userName = userData.fn + userData.ln + "" + Math.floor(Math.random() * 15);
-                return{
-                    ...prev ,
-                    [name] : value,
-                    userName : userName
-                }
-            }
-            else{
                 return {
-                    ...prev ,
-                    [name] : value,
+                    ...prev,
+                    [name]: value,
+                    userName: userName
+                };
+            } else {
+                return {
+                    ...prev,
+                    [name]: value,
                 };
             }
         });
     }
 
-    function submitHandler(event){    
-        if(currPaswd !== confmPasswd) {
-            toast.error("Password didn't matched");
-            event.preventDefault();
-        }   
-        else{
-            if (!localStorage.getItem("user")) {
-                localStorage.setItem("user", JSON.stringify({}));
-            }
-            let mainData = JSON.parse(localStorage.getItem("user")) || {};
-            mainData = { ...mainData, [userData.userName]: userData };
-            localStorage.setItem("user", JSON.stringify(mainData));
-            toast.success("Account created successfully");
-        }
-    }
+    function submitHandler(event) {
+        event.preventDefault();
 
+        // Account already exists
+        if (accountMatched) {
+            toast.error("Account already exists");
+            return;
+        }
+
+        // Passwords don't match
+        if (currPaswd !== confmPasswd) {
+            toast.error("Password didn't match");
+            return;
+        }
+
+        // Submission
+        const mainData = JSON.parse(localStorage.getItem("user")) || {};
+        const updatedMainData = { ...mainData, [userData.userName]: userData };
+        localStorage.setItem("user", JSON.stringify(updatedMainData));
+    
+        toast.success(`Account created successfully Your Username is "${userData.userName}"` , 
+                {
+                className: "toast-message", 
+            }
+        ); 
+
+        setTimeout(() => {
+            navigate('/login')
+        } , 1700)
+    }
 
     return (
         <>

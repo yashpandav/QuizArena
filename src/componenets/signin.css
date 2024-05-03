@@ -78,3 +78,12 @@ button[type = "reset"]{
     top: 0.2rem;
     left: -2.1rem;
 }
+
+.toast-message {
+    margin-top: 20%;
+    background: #274c77;
+    color: #e5e5e5;
+    font-size: 20px;
+    width: 34vw;
+    padding: 30px 20px;
+}

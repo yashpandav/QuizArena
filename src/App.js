@@ -26,7 +26,7 @@ function App() {
         </> 
                   : 
             <Route path="/login" element = {<Login isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
-        }
+        } 
         {/* <Route path='/dashboard' element={
             <PrivateRoute isLogin={isLogin}>
                 <Dashboard />
