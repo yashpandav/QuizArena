@@ -86,15 +86,30 @@ export default function Signin() {
                 {
                 className: "toast-message", 
             }
-        ); 
+        );
 
         setTimeout(() => {
             navigate('/login')
         } , 1700)
     }
 
+    function resetHandler(){
+        setUserData(prev => {
+            return {
+                ...prev,
+                fn : "" ,
+                ln : "" ,
+                number : "",
+                email : "" ,
+                confmpasswd : "",
+                userName : ""   
+            };
+        });
+        setConfm("");
+        setCurr("");
+    }
+
     return (
-        <>
         <div id='signin'>
             <div id='form'>
                 <h3>
@@ -148,7 +163,6 @@ export default function Signin() {
                                                 };
                                             });
                                     }
-
                                     } required />
                             <button type='button' className='passbtn' onClick={finalShowpasswdHandler} >
                                 {
@@ -163,11 +177,10 @@ export default function Signin() {
                     </div>
                     <hr style={{ backgroundColor: "grey" }}></hr>
                     <button type='submit' id='submit'>Create Account</button>
-                    <button type='reset'>Reset</button>
+                    <button type='reset' id='reset' onClick={resetHandler}>Reset</button>
                 </form>
             </div>
             <img id='signupimg' src={require('../data/two.png')} alt="signup image" />
         </div>
-        </>
     );
 }

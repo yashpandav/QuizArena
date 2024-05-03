@@ -48,7 +48,7 @@ sup{
     color: red;
 }
 
-button{
+#submit , #reset{
     width: 40%;
     height: 35px;
     border: none;

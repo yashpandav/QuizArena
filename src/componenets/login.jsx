@@ -144,7 +144,7 @@ export default function Login({isLogin , setLogin}){
                     </div>
                     <hr style={{ backgroundColor: "grey" }}></hr>
                     <button type='submit' id='submit'>Log In</button>
-                    <button type='reset' onClick={() =>{
+                    <button type='reset' id='reset' onClick={() =>{
                         setCurr((prev) => {
                             return {
                                 ...prev ,

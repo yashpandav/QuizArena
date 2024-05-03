@@ -1,0 +1,19 @@
+#exam{
+    width: 100vw;
+}
+
+.quiz-btn{
+    min-width: max-content;
+    padding-inline: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.quiz-btn:nth-child(1){
+    margin-top: 3%;
+}
