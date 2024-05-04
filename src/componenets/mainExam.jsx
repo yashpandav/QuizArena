@@ -29,22 +29,3 @@ export default function MainExam({examCategory , filteredData}){
         </div> 
     )
 }
-
-
-// 37
-// : 
-// answer
-// : 
-// "C"
-// category
-// : 
-// "Programming"
-// id
-// : 
-// 59
-// options
-// : 
-// {A: 'Java', B: 'Python', C: 'C#', D: 'Ruby'}
-// question
-// : 
-// "Which of the following is a commonly used programming language for game development?"
