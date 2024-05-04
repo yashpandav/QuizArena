@@ -12,15 +12,16 @@ import { Navigate } from "react-router-dom";
 function App() {
 
   const [isLogin , setLogin] = useState(false);
+  const [showNavigation , setNavigation] = useState(true);
 
   return(
     <div className="main">
-      <Navbar isLogin = {isLogin} setLogin = {setLogin}></Navbar>
+      <Navbar isLogin = {isLogin} setLogin = {setLogin} showNavigation = {showNavigation}></Navbar>
       <Routes>
         <Route path = '/' element = {<Home isLogin = {isLogin}></Home>}></Route>
         <Route path="/login" element = {<Login isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
         <Route path="/signin" element = {<Signin isLogin = {isLogin}></Signin>}></Route>
-        <Route path="/exam" element = {<Exam isLogin = {isLogin}></Exam>}></Route>
+        <Route path="/exam" element = {<Exam isLogin = {isLogin} showNavigation = {showNavigation} setNavigation = {setNavigation}></Exam>}></Route>
         {isLogin ?
               <><Route path="/dashboard" element = {<Dashboard></Dashboard>}></Route> 
               <Route path="/userInfo" element = {<Account></Account>}></Route>
