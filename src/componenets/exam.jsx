@@ -31,7 +31,7 @@ export default function Exam({ isLogin , setNavigation , showNavigation}) {
             </div>
                     {startExam ? ( 
                         <>
-                        <TimeCounter examCategory = {examCategory}></TimeCounter>
+                        <TimeCounter examCategory = {examCategory} filteredData = {filteredData}></TimeCounter>
                         </>
 ) : null}
         </div>
