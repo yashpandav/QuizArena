@@ -1,42 +1,19 @@
 export default function MainExam({examCategory , filteredData}){
-
-    // const examData = {
-    //     "category" : filteredData.question,
-    //     "answer" : filteredData.
-    // }
-
     const examArr = [];
-    // let start = Math.floor(Math.random() * 50);
-    // let end = start + 10;
-    
-    // for(let i = start ; i < end ;){
-    //     filteredData.forEach(element => {
-    //         let idx = Math.floor(Math.random() * 50)
-    //         const ele = element.id === idx ? element : "";
-    //         if(ele !== ""){
-    //             examArr.push(ele);
-    //             i++;
-    //         }
-    //         else{
-    //         }
-    //     });
-    // }
-    
+    let start = Math.floor(Math.random() * 50);
+    let end = start + 10;
     const idxSet = new Set();
-    while(examArr.length < 10){
+    for(let i = start ; i < end ;){
         let idx = Math.floor(Math.random() * 50)
         if(!idxSet.has(idx)){
             const ele = filteredData.find(element => element.id === idx);
             if(ele){
+                i++;
                 examArr.push(ele);
             }
             idxSet.add(idx);
         }
     }
-
-    // if(examArr.length > 10){
-    //     examArr.splice(10 , examArr.length);
-    // }
     console.log(examArr)
 
     return(
