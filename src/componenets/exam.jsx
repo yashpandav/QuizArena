@@ -24,21 +24,18 @@ export default function Exam({ isLogin , setNavigation , showNavigation}) {
 
     return isLogin ? (
         <div id='exam'>
-            <div id='exam-btns'>
-                <button className='quiz-btn' onClick={() => { setCategory('DSA'); startExamHandler(); }}>Take DSA Quiz</button>
-                <button className='quiz-btn' onClick={() => { setCategory('Programming'); startExamHandler(); }}>Take Programming Quiz</button>
-                <button className='quiz-btn' onClick={() => { setCategory('All'); startExamHandler(); }}>Take Mix Quiz</button>
-            </div>
+           
                     {startExam ? ( 
                         <>
                         <TimeCounter examCategory = {examCategory} filteredData = {filteredData}></TimeCounter>
                         </>
-) : null}
+) :  <div id='exam-btns'>
+<button className='quiz-btn' onClick={() => { setCategory('DSA'); startExamHandler(); }}>Take DSA Quiz</button>
+<button className='quiz-btn' onClick={() => { setCategory('Programming'); startExamHandler(); }}>Take Programming Quiz</button>
+<button className='quiz-btn' onClick={() => { setCategory('All'); startExamHandler(); }}>Take Mix Quiz</button>
+</div>}
         </div>
     ) 
-    
-    
-    
     
     
     : (

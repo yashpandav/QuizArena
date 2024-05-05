@@ -1,0 +1,9 @@
+.time{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h4{
+    color: #0353a4
+}

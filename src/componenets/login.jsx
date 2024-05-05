@@ -134,7 +134,6 @@ export default function Login({isLogin , setLogin}){
                                     )
                                 }
                             </button>
-
                     <div id='forgot'>
                         <p id='paraforgot'>
                             <sub>

@@ -1,0 +1,19 @@
+.examContainer{
+    width: 80vw;
+}
+
+.optKey{
+    align-items: start;
+}
+
+
+.examContainer > label{
+    /* font-size: 17px; */
+}
+
+.examContainer > input{
+    border-radius: 0px;
+    border: none;
+    width: 0%;
+    margin-bottom: 0px;
+}
