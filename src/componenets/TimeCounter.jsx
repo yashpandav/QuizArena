@@ -11,7 +11,7 @@ export default function TimeCounter({examCategory , filteredData}){
 
     useEffect(() => {
         const time = timer > 0 && setInterval(() => setTimer(timer - 1), 1000);
-        return () => {clearInterval(time) 
+        return () => {clearInterval(time)
         };
     }, [timer]);
 

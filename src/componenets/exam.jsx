@@ -16,7 +16,7 @@ export default function Exam({ isLogin , setNavigation , showNavigation}) {
         });
         setFilteredData(filtered);
     }, [examCategory]);
-
+    
     function startExamHandler() {
         setNavigation(false);
         setstartExam(true);
@@ -24,7 +24,6 @@ export default function Exam({ isLogin , setNavigation , showNavigation}) {
 
     return isLogin ? (
         <div id='exam'>
-           
                     {startExam ? ( 
                         <>
                         <TimeCounter examCategory = {examCategory} filteredData = {filteredData}></TimeCounter>

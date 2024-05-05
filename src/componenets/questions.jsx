@@ -1,7 +1,20 @@
 import React from "react";
 import './questions.css'
 
-export default function Questions({examArr}){
+export default function Questions({examArr , userAnsHandler}){
+
+    const currAns = new Map();
+
+    function selectHandler(event){
+        let name = event.target.name;
+        let value = event.target.id;
+        currAns.set(name , value);
+        console.log(currAns)
+    }
+
+    
+
+
     return (
         <div className="examContainer">
             {examArr.map((exam, index) => (
@@ -12,8 +25,8 @@ export default function Questions({examArr}){
                     </div>
                     {Object.entries(exam.options).map(([optKey, optValue]) => (
                         <div className="options" key={optKey}>
-                            <input type="radio" name={`op${index}`} value={optValue} id={`op${index + optKey}`} />
-                            <label htmlFor={`op${index + optKey}`}>{optValue}</label>
+                            <input type="radio" onClick={selectHandler} name={`op${index}`} value={optValue} id={index + optKey} />
+                            <label htmlFor={index + optKey}>{optValue}</label>
                         </div>
                     ))}
                 </div>
