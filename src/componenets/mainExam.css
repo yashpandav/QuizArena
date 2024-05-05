@@ -7,3 +7,31 @@
 h5{
     color: #ccc9dc;
 }
+
+.exam-header > button{
+    cursor: pointer;
+    font-size: 19px;
+    margin-right: 24px;
+    width: max-content;
+    padding: 0.3vw;
+    padding-inline: 1vw;
+    border: none;
+    border-radius: 7px;
+}
+
+#justForFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+#justForFlex > button{
+    cursor: pointer;
+    font-size: 21px;
+    width: max-content;
+    padding: 0.5vw;
+    padding-inline: 2.4vw;
+    border: none;
+    border-radius: 10px;
+}

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "category" : "Programming",
-        "question": "Which of the following is a programming language?",
+        "question": "Which of the following is a programming language ?",
         "options": {
           "A": "Python",
           "B": "Photoshop",
@@ -14,7 +14,7 @@
       {
         "id": 2,
         "category" : "Programming",
-        "question": "Which programming paradigm emphasizes on writing code that is easy to read and maintain?",
+        "question": "Which programming paradigm emphasizes on writing code that is easy to read and maintain ?",
         "options": {
           "A": "Procedural programming",
           "B": "Object-oriented programming",
@@ -26,7 +26,7 @@
       {
         "id": 3,
         "category" : "Programming",
-        "question": "What is the term used for a block of code that is executed repeatedly until a certain condition is met?",
+        "question": "What is the term used for a block of code that is executed repeatedly until a certain condition is met ?",
         "options": {
           "A": "Function",
           "B": "Loop",
@@ -38,7 +38,7 @@
       {
         "id": 4,
         "category" : "Programming",
-        "question": "Which data structure is used for storing a collection of elements in a non-linear fashion?",
+        "question": "Which data structure is used for storing a collection of elements in a non-linear fashion ?",
         "options": {
           "A": "Array",
           "B": "Stack",
@@ -50,7 +50,7 @@
       {
         "id": 5,
         "category" : "Programming",
-        "question": "Which operator is used for exponentiation in most programming languages?",
+        "question": "Which operator is used for exponentiation in most programming languages ?",
         "options": {
           "A": "^",
           "B": "*",
@@ -62,7 +62,7 @@
       {
         "id": 6,
         "category" : "Programming",
-        "question": "Which programming language is used for developing Android apps?",
+        "question": "Which programming language is used for developing Android apps ?",
         "category" : "Programming",
         "options": {
           "A": "Java",
@@ -75,7 +75,7 @@
       {
         "id": 7,
         "category" : "Programming",
-        "question": "Which of the following is not a valid variable name in most programming languages?",
+        "question": "Which of the following is not a valid variable name in most programming languages ?",
         "category" : "Programming",
         "options": {
           "A": "myVariable",
@@ -88,7 +88,7 @@
       {
         "id": 8,
         "category" : "Programming",
-        "question": "Which of the following is a type of sorting algorithm?",
+        "question": "Which of the following is a type of sorting algorithm ?",
         "options": {
           "A": "Binary search",
           "B": "Quick sort",
@@ -100,7 +100,7 @@
       {
         "id": 9,
         "category" : "Programming",
-        "question": "Which of the following is not a web browser?",
+        "question": "Which of the following is not a web browser ?",
         "options": {
           "A": "Chrome",
           "B": "Safari",
@@ -112,7 +112,7 @@
       {
         "id": 10,
         "category" : "Programming",
-        "question": "Which keyword is used for defining a function in most programming languages?",
+        "question": "Which keyword is used for defining a function in most programming languages ?",
         "options": {
           "A": "def",
           "B": "fun",
@@ -124,7 +124,7 @@
       {
         "id": 11,
         "category" : "Programming",
-        "question": "Which of the following is not a data type in most programming languages?",
+        "question": "Which of the following is not a data type in most programming languages ?",
         "options": {
           "A": "Integer",
           "B": "Float",
@@ -136,7 +136,7 @@
       {
         "id": 12,
         "category" : "Programming",
-        "question": "Which programming language is used for developing iOS apps?",
+        "question": "Which programming language is used for developing iOS apps ?",
         "options": {
           "A": "Java",
           "B": "C#",
@@ -148,7 +148,7 @@
       {
         "id": 13,
         "category" : "Programming",
-        "question": "Which of the following is not a relational operator in most programming languages?",
+        "question": "Which of the following is not a relational operator in most programming languages ?",
         "options": {
           "A": "=",
           "B": "==",
@@ -160,7 +160,7 @@
       {
         "id": 14,
         "category" : "Programming",
-        "question": "Which data structure is used for implementing a Last-In-First-Out (LIFO) behavior?",
+        "question": "Which data structure is used for implementing a Last-In-First-Out (LIFO) behavior ?",
         "options": {
           "A": "Queue",
           "B": "Stack",
@@ -172,7 +172,7 @@
       {
         "id": 15,
         "category" : "Programming",
-        "question": "Which of the following is not a programming language?",
+        "question": "Which of the following is not a programming language ?",
         "options": {
           "A": "HTML",
           "B": "CSS",
@@ -184,7 +184,7 @@
       {
         "id": 16,
         "category" : "Programming",
-        "question": "Which of the following is a type of conditional statement?",
+        "question": "Which of the following is a type of conditional statement ?",
         "options": {
           "A": "If statement",
           "B": "For loop",
@@ -196,7 +196,7 @@
       {
         "id": 17,
         "category" : "Programming",
-        "question": "Which of the following is a type of database?",
+        "question": "Which of the following is a type of database ?",
         "options": {
           "A": "Relational database",
           "B": "Object-oriented database",
@@ -208,7 +208,7 @@
       {
         "id": 18,
         "category" : "Programming",
-        "question": "Which of the following is a type of computer network?",
+        "question": "Which of the following is a type of computer network ?",
         "options": {
           "A": "Local Area Network (LAN)",
           "B": "Wide Area Network (WAN)",
@@ -220,7 +220,7 @@
       {
         "id": 19,
         "category" : "Programming",
-        "question": "Which of the following is a type of web development framework?",
+        "question": "Which of the following is a type of web development framework ?",
         "options": {
           "A": "Django",
           "B": "React",
@@ -232,7 +232,7 @@
       {
         "id": 20,
         "category" : "Programming",
-        "question": "Which of the following is a type of web hosting?",
+        "question": "Which of the following is a type of web hosting ?",
         "options": {
           "A": "Shared hosting",
           "B": "Dedicated hosting",
@@ -244,7 +244,7 @@
       {
         "id": 21,
         "category" : "Programming",
-        "question": "Which of the following is not a data structure?",
+        "question": "Which of the following is not a data structure ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -256,7 +256,7 @@
       {
         "id": 22,
         "category" : "Programming",
-        "question": "Which programming paradigm emphasizes on writing code as a series of mathematical functions?",
+        "question": "Which programming paradigm emphasizes on writing code as a series of mathematical functions ?",
         "options": {
           "A": "Procedural programming",
           "B": "Object-oriented programming",
@@ -268,7 +268,7 @@
       {
         "id": 23,
         "category" : "Programming",
-        "question": "Which of the following is a type of database management system?",
+        "question": "Which of the following is a type of database management system ?",
         "options": {
           "A": "MySQL",
           "B": "Oracle",
@@ -280,7 +280,7 @@
       {
         "id": 24,
         "category" : "Programming",
-        "question": "Which of the following is a type of cloud computing service?",
+        "question": "Which of the following is a type of cloud computing service ?",
         "options": {
           "A": "Infrastructure as a Service (IaaS)",
           "B": "Platform as a Service (PaaS)",
@@ -292,7 +292,7 @@
       {
         "id": 25,
         "category" : "Programming",
-        "question": "Which of the following is not a commonly used programming language for web development?",
+        "question": "Which of the following is not a commonly used programming language for web development ?",
         "options": {
           "A": "Java",
           "B": "Ruby",
@@ -304,7 +304,7 @@
       {
         "id": 26,
         "category" : "Programming",
-        "question": "Which of the following is used for creating and managing virtual environments in Python?",
+        "question": "Which of the following is used for creating and managing virtual environments in Python ?",
         "options": {
           "A": "pip",
           "B": "venv",
@@ -316,7 +316,7 @@
       {
         "id": 27,
         "category" : "Programming",
-        "question": "Which of the following is a popular open-source database management system?",
+        "question": "Which of the following is a popular open-source database management system ?",
         "options": {
           "A": "MongoDB",
           "B": "Oracle",
@@ -328,7 +328,7 @@
       {
         "id": 28,
         "category" : "Programming",
-        "question": "Which of the following is not a commonly used web development framework in JavaScript?",
+        "question": "Which of the following is not a commonly used web development framework in JavaScript ?",
         "options": {
           "A": "React",
           "B": "Angular",
@@ -340,7 +340,7 @@
       {
         "id": 29,
         "category" : "Programming",
-        "question": "Which of the following is not a commonly used programming language for artificial intelligence (AI) and machine learning (ML)?",
+        "question": "Which of the following is not a commonly used programming language for artificial intelligence (AI) and machine learning (ML) ?",
         "options": {
           "A": "Python",
           "B": "R",
@@ -352,7 +352,7 @@
       {
         "id": 50,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the longest common subsequence of two sequences?",
+        "question": "Which algorithm is used to find the longest common subsequence of two sequences ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -364,7 +364,7 @@
       {
         "id": 41,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the strongly connected components in a directed graph?",
+        "question": "Which algorithm is used to find the strongly connected components in a directed graph ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -376,7 +376,7 @@
       {
         "id": 39,
         "category" : "DSA",
-        "question": "Which data structure is used for implementing a priority queue with efficient retrieval of the highest priority element?",
+        "question": "Which data structure is used for implementing a priority queue with efficient retrieval of the highest priority element ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -388,7 +388,7 @@
       {
         "id": 43,
         "category" : "DSA",
-        "question": "Which sorting algorithm divides the list into two sublists, sorted and unsorted, and repeatedly inserts elements into the sorted sublist?",
+        "question": "Which sorting algorithm divides the list into two sublists, sorted and unsorted, and repeatedly inserts elements into the sorted sublist ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -400,7 +400,7 @@
       {
         "id": 35,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the topological ordering of a directed acyclic graph (DAG)?",
+        "question": "Which algorithm is used to find the topological ordering of a directed acyclic graph (DAG) ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -412,7 +412,7 @@
       {
         "id": 30,
         "category" : "DSA",
-        "question": "Which data structure is used for implementing a cache with efficient retrieval operations?",
+        "question": "Which data structure is used for implementing a cache with efficient retrieval operations ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -424,7 +424,7 @@
       {
         "id": 34,
         "category" : "DSA",
-        "question": "Which sorting algorithm is based on the comparison of adjacent elements and swapping them if necessary?",
+        "question": "Which sorting algorithm is based on the comparison of adjacent elements and swapping them if necessary ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -436,7 +436,7 @@
       {
         "id": 50,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the longest common subsequence of two sequences?",
+        "question": "Which algorithm is used to find the longest common subsequence of two sequences ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -448,7 +448,7 @@
       {
         "id": 36,
         "category" : "DSA",
-        "question": "Which data structure is used for implementing a first-in, first-out (FIFO) system?",
+        "question": "Which data structure is used for implementing a first-in, first-out (FIFO) system ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -460,7 +460,7 @@
       {
         "id": 45,
         "category" : "DSA",
-        "question": "Which data structure is used for implementing a lookup table with efficient key-value pair retrieval?",
+        "question": "Which data structure is used for implementing a lookup table with efficient key-value pair retrieval ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -472,7 +472,7 @@
       {
         "id": 38,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the articulation points in a graph?",
+        "question": "Which algorithm is used to find the articulation points in a graph ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -484,7 +484,7 @@
       {
         "id": 29,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the longest increasing subsequence in an array?",
+        "question": "Which algorithm is used to find the longest increasing subsequence in an array ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -496,7 +496,7 @@
       {
         "id": 47,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the maximum sum subarray in an array?",
+        "question": "Which algorithm is used to find the maximum sum subarray in an array ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -508,7 +508,7 @@
       {
         "id": 46,
         "category" : "DSA",
-        "question": "Which sorting algorithm is based on the comparison of elements separated by a fixed gap?",
+        "question": "Which sorting algorithm is based on the comparison of elements separated by a fixed gap ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -520,7 +520,7 @@
       {
         "id": 37,
         "category" : "DSA",
-        "question": "Which sorting algorithm works by repeatedly selecting the maximum element and placing it at the end of the list?",
+        "question": "Which sorting algorithm works by repeatedly selecting the maximum element and placing it at the end of the list ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -532,7 +532,7 @@
       {
         "id": 42,
         "category" : "DSA",
-        "question": "Which data structure is used for implementing a balanced binary search tree?",
+        "question": "Which data structure is used for implementing a balanced binary search tree ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -544,7 +544,7 @@
       {
         "id": 32,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the maximum flow in a network?",
+        "question": "Which algorithm is used to find the maximum flow in a network ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -556,7 +556,7 @@
       {
         "id": 44,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the articulation bridges in a graph?",
+        "question": "Which algorithm is used to find the articulation bridges in a graph ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -568,7 +568,7 @@
       {
         "id": 31,
         "category" : "DSA",
-        "question": "Which sorting algorithm works by dividing the list into sublists and repeatedly merging them?",
+        "question": "Which sorting algorithm works by dividing the list into sublists and repeatedly merging them ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -580,7 +580,7 @@
       {
         "id": 33,
         "category" : "DSA",
-        "question": "Which data structure represents a collection of elements with no particular order?",
+        "question": "Which data structure represents a collection of elements with no particular order ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -592,7 +592,7 @@
       {
         "id": 40,
         "category" : "DSA",
-        "question": "Which sorting algorithm is known for its efficiency in sorting large datasets?",
+        "question": "Which sorting algorithm is known for its efficiency in sorting large datasets ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -604,7 +604,7 @@
       {
         "id": 48,
         "category" : "DSA",
-        "question": "Which data structure is used for implementing a self-balancing binary search tree?",
+        "question": "Which data structure is used for implementing a self-balancing binary search tree ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -616,7 +616,7 @@
       {
         "id": 49,
         "category" : "DSA",
-        "question": "Which sorting algorithm is based on the comparison of adjacent elements and swapping them if necessary, but with a time complexity of O(n)?",
+        "question": "Which sorting algorithm is based on the comparison of adjacent elements and swapping them if necessary, but with a time complexity of O(n) ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -628,7 +628,7 @@
       {
         "id": 38,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the articulation points in a graph?",
+        "question": "Which algorithm is used to find the articulation points in a graph ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -640,7 +640,7 @@
       {
         "id": 49,
         "category" : "DSA",
-        "question": "Which sorting algorithm is based on the comparison of adjacent elements and swapping them if necessary, but with a time complexity of O(n)?",
+        "question": "Which sorting algorithm is based on the comparison of adjacent elements and swapping them if necessary, but with a time complexity of O(n) ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -652,7 +652,7 @@
       {
         "id": 46,
         "category" : "DSA",
-        "question": "Which sorting algorithm is based on the comparison of elements separated by a fixed gap?",
+        "question": "Which sorting algorithm is based on the comparison of elements separated by a fixed gap ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -664,7 +664,7 @@
       {
         "id": 47,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the maximum sum subarray in an array?",
+        "question": "Which algorithm is used to find the maximum sum subarray in an array ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -676,7 +676,7 @@
       {
         "id": 44,
         "category" : "DSA",
-        "question": "Which algorithm is used to find the articulation bridges in a graph?",
+        "question": "Which algorithm is used to find the articulation bridges in a graph ?",
         "options": {
           "A": "Depth-first search",
           "B": "Breadth-first search",
@@ -688,7 +688,7 @@
       {
         "id": 31,
         "category" : "DSA",
-        "question": "Which sorting algorithm works by dividing the list into sublists and repeatedly merging them?",
+        "question": "Which sorting algorithm works by dividing the list into sublists and repeatedly merging them ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -700,7 +700,7 @@
       {
         "id": 33,
         "category" : "DSA",
-        "question": "Which data structure represents a collection of elements with no particular order?",
+        "question": "Which data structure represents a collection of elements with no particular order ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -712,7 +712,7 @@
       {
         "id": 40,
         "category" : "DSA",
-        "question": "Which sorting algorithm is known for its efficiency in sorting large datasets?",
+        "question": "Which sorting algorithm is known for its efficiency in sorting large datasets ?",
         "options": {
           "A": "Bubble sort",
           "B": "Insertion sort",
@@ -724,7 +724,7 @@
       {
         "id": 48,
         "category" : "DSA",
-        "question": "Which data structure is used for implementing a self-balancing binary search tree?",
+        "question": "Which data structure is used for implementing a self-balancing binary search tree ?",
         "options": {
           "A": "Stack",
           "B": "Queue",
@@ -737,7 +737,7 @@
       {
         "id": 51,
         "category" : "Programming",
-        "question": "Which of the following is a type of loop in programming?",
+        "question": "Which of the following is a type of loop in programming ?",
         "options": {
           "A": "For loop",
           "B": "While loop",
@@ -749,7 +749,7 @@
     {
         "id": 52,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used markup language for web development?",
+        "question": "Which of the following is a commonly used markup language for web development ?",
         "options": {
           "A": "HTML",
           "B": "XML",
@@ -761,7 +761,7 @@
     {
         "id": 53,
         "category" : "Programming",
-        "question": "Which of the following is not a commonly used relational database management system?",
+        "question": "Which of the following is not a commonly used relational database management system ?",
         "options": {
           "A": "MySQL",
           "B": "PostgreSQL",
@@ -773,7 +773,7 @@
     {
         "id": 54,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used version control system?",
+        "question": "Which of the following is a commonly used version control system ?",
         "options": {
           "A": "Git",
           "B": "SVN",
@@ -785,7 +785,7 @@
     {
         "id": 55,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used integrated development environment (IDE) for Python?",
+        "question": "Which of the following is a commonly used integrated development environment (IDE) for Python ?",
         "options": {
           "A": "Visual Studio Code",
           "B": "PyCharm",
@@ -797,7 +797,7 @@
     {
         "id": 56,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used web application framework for Ruby?",
+        "question": "Which of the following is a commonly used web application framework for Ruby ?",
         "options": {
           "A": "Django",
           "B": "Flask",
@@ -809,7 +809,7 @@
     {
         "id": 57,
         "category" : "Programming",
-        "question": "Which of the following is a type of web server?",
+        "question": "Which of the following is a type of web server ?",
         "options": {
           "A": "Apache HTTP Server",
           "B": "Nginx",
@@ -821,7 +821,7 @@
     {
         "id": 58,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used object-oriented programming language?",
+        "question": "Which of the following is a commonly used object-oriented programming language ?",
         "options": {
           "A": "C",
           "B": "Python",
@@ -833,7 +833,7 @@
     {
         "id": 59,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used programming language for game development?",
+        "question": "Which of the following is a commonly used programming language for game development ?",
         "options": {
           "A": "Java",
           "B": "Python",
@@ -845,7 +845,7 @@
     {
         "id": 60,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used programming language for mobile app development?",
+        "question": "Which of the following is a commonly used programming language for mobile app development ?",
         "options": {
           "A": "Java",
           "B": "Swift",
@@ -857,7 +857,7 @@
     {
         "id": 61,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used web development framework for PHP?",
+        "question": "Which of the following is a commonly used web development framework for PHP ?",
         "options": {
           "A": "Laravel",
           "B": "Flask",
@@ -869,7 +869,7 @@
     {
         "id": 62,
         "category" : "Programming",
-        "question": "Which of the following is not a commonly used operating system for servers?",
+        "question": "Which of the following is not a commonly used operating system for servers ?",
         "options": {
           "A": "Windows Server",
           "B": "Linux",
@@ -881,7 +881,7 @@
     {
         "id": 63,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used scripting language for web development?",
+        "question": "Which of the following is a commonly used scripting language for web development ?",
         "options": {
           "A": "Java",
           "B": "Ruby",
@@ -893,7 +893,7 @@
     {
         "id": 64,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used web development framework for JavaScript?",
+        "question": "Which of the following is a commonly used web development framework for JavaScript ?",
         "options": {
           "A": "Django",
           "B": "Flask",
@@ -905,7 +905,7 @@
     {
         "id": 65,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used web development framework for Java?",
+        "question": "Which of the following is a commonly used web development framework for Java ?",
         "options": {
           "A": "Django",
           "B": "Flask",
@@ -917,7 +917,7 @@
     {
         "id": 66,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used web development framework for Ruby?",
+        "question": "Which of the following is a commonly used web development framework for Ruby ?",
         "options": {
           "A": "Django",
           "B": "Flask",
@@ -929,7 +929,7 @@
     {
         "id": 67,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used programming language for scientific computing?",
+        "question": "Which of the following is a commonly used programming language for scientific computing ?",
         "options": {
           "A": "Java",
           "B": "Python",
@@ -941,7 +941,7 @@
     {
         "id": 68,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used programming language for data analysis?",
+        "question": "Which of the following is a commonly used programming language for data analysis ?",
         "options": {
           "A": "Java",
           "B": "Python",
@@ -953,7 +953,7 @@
     {
         "id": 69,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used web development framework for Python?",
+        "question": "Which of the following is a commonly used web development framework for Python ?",
         "options": {
           "A": "Django",
           "B": "Flask",
@@ -965,7 +965,7 @@
     {
         "id": 70,
         "category" : "Programming",
-        "question": "Which of the following is a commonly used programming language for server-side web development?",
+        "question": "Which of the following is a commonly used programming language for server-side web development ?",
         "options": {
           "A": "JavaScript",
           "B": "Ruby",
@@ -977,7 +977,7 @@
     {
         "id": 71,
         "category" : "Programming",
-        "question": "What is the purpose of a loop in programming?",
+        "question": "What is the purpose of a loop in programming ?",
         "options": {
           "A": "To execute a set of instructions a specified number of times.",
           "B": "To terminate the program.",

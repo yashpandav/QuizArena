@@ -1,19 +1,35 @@
 .examContainer{
-    width: 80vw;
+    color: white;
+    width: auto;
 }
 
-.optKey{
-    align-items: start;
+.exam_module{
+    height: max-content;
+    background-color :rgba(44, 45, 46, 0.545);
+    margin-left: 4.4%;
+    margin-right: 8.4%;
+    margin-top: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2.5px rgb(179, 171, 171) ,-1px 1px 2.5px rgb(179, 171, 171) ,1px -1px 2.5px rgb(179, 171, 171) ,-1px -1px 2.5px rgb(179, 171, 171);
 }
 
-
-.examContainer > label{
-    /* font-size: 17px; */
+.que{
+    font-size: 17px;
+    padding-top: 5px;
+    padding-bottom: 4px;
 }
 
-.examContainer > input{
-    border-radius: 0px;
-    border: none;
-    width: 0%;
-    margin-bottom: 0px;
+.que:first-child{
+    margin-left: 0.8%;
+}
+
+.options > label{
+    color: #fbfaff;
+}
+
+.options > input[type = "radio"]{
+    width: auto;
+    margin-left: 34px;
+    margin-right: 20px;
+    margin-top: 10px;
 }

@@ -14,7 +14,7 @@ export default function MainExam({examCategory , filteredData}){
                 examArr.push(ele);
             }
             idxSet.add(idx);
-        }
+        }   
     }
     return(
         <div className="mainExam">
@@ -24,7 +24,13 @@ export default function MainExam({examCategory , filteredData}){
             </div>
             <hr style={{height : "0.5px" , backgroundColor : "#393d3f"}}></hr>
                 <Questions examArr = {examArr}></Questions>
-            <button type="button" id="exam-Btn" value='Submit'>End Test</button>
+            <hr style={{height : "0.5px" , backgroundColor : "#393d3f" , marginTop : "2.5vw"}}></hr>  
+            <div id="justForFlex">
+                <button type="button" id="exam-Btn-cancel" value='cancel'>Cancel Test</button>
+                <button type="button" id="exam-Btn" value='Submit'>End Test</button>
+            </div>
+            <hr style={{height : "0.5px" , backgroundColor : "#393d3f"}}></hr>  
+
         </div> 
     )
 }
