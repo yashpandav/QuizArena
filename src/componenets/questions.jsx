@@ -1,19 +1,15 @@
 import React from "react";
 import './questions.css'
 
-export default function Questions({examArr , userAnsHandler}){
-
+export default function Questions({examArr , print}){
     const currAns = new Map();
 
     function selectHandler(event){
         let name = event.target.name;
         let value = event.target.id;
         currAns.set(name , value);
-        console.log(currAns)
+        print(name , value)
     }
-
-    
-
 
     return (
         <div className="examContainer">
