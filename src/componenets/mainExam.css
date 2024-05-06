@@ -35,3 +35,12 @@ h5{
     border: none;
     border-radius: 10px;
 }
+
+.exam-score{
+    margin-top: 20%;
+    background: #023047 ;
+    color: #fffbf1;
+    font-size: 20px;
+    width: 34vw;
+    padding: 30px 20px;
+}

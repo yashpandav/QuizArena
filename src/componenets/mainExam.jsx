@@ -2,13 +2,15 @@ import Questions from "./questions";
 import './mainExam.css';
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
-export default function MainExam({ examCategory, filteredData }) {
+export default function MainExam({ examCategory, filteredData , startExam , setstartExam}) {
     const [examArr, setExamArr] = useState([]);
     const [score, setScore] = useState(0);
     const userAns = new Map();
     const finalUserAns = [];
     const ansArr = [];
+    const navigate = useNavigate();
 
     useEffect(() => {
         const idxSet = new Set();
@@ -29,7 +31,7 @@ export default function MainExam({ examCategory, filteredData }) {
     examArr.forEach((exam, index) => {
         ansArr.push(index + exam.answer);
     });
-    
+
     function getUserAnsHandler(name, value) {
         userAns.set(name, value);
     }
@@ -42,9 +44,18 @@ export default function MainExam({ examCategory, filteredData }) {
             }
         });
         setScore(updatedScore);
-        toast.success(updatedScore);
+        toast.success(`Your score is ${updatedScore} out of 10 ` , 
+                {
+                className: "exam-score", 
+            }
+        );
+        
+        setstartExam(false);
+        setTimeout(() => {
+            navigate('/exam');
+        } , 1000)
     }
-    
+
     function submitHandler(){
         userAns.forEach((value) => {
             finalUserAns.push(value);
