@@ -1,14 +1,14 @@
 import React from "react";
 import './questions.css'
 
-export default function Questions({examArr , print}){
+export default function Questions({examArr , getUserAns}){
     const currAns = new Map();
 
     function selectHandler(event){
         let name = event.target.name;
         let value = event.target.id;
         currAns.set(name , value);
-        print(name , value)
+        getUserAns(name , value)
     }
 
     return (

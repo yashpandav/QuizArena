@@ -1,44 +1,58 @@
 import Questions from "./questions";
-import './mainExam.css'
+import './mainExam.css';
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
-export default function MainExam({examCategory , filteredData}){
-    const examArr = []; 
-    const idxSet = new Set();
+export default function MainExam({ examCategory, filteredData }) {
+    const [examArr, setExamArr] = useState([]);
+    const [score, setScore] = useState(0);
     const userAns = new Map();
     const finalUserAns = [];
     const ansArr = [];
 
-    for(let i = 0 ; i < 10 ;){
-        let idx = Math.floor(Math.random() * Math.floor(Math.random() * 50))
-        if(!idxSet.has(idx)){
-            const ele = filteredData.find(element => element.id === idx);
-            if(ele){
-                i++;
-                examArr.push(ele);
+    useEffect(() => {
+        const idxSet = new Set();
+        for (let i = 0; i < 10;) {
+            let idx = Math.floor(Math.random() * Math.floor(Math.random() * 50));
+            if (!idxSet.has(idx)) {
+                const ele = filteredData.find(element => element.id === idx);
+                if (ele) {
+                    i++;
+                    setExamArr(prevExamArr => [...prevExamArr, ele]);
+                }
+                idxSet.add(idx);
             }
-            idxSet.add(idx);
-        }   
-    }
+        }
+        setScore(0);
+    }, []); 
 
-    examArr.map((exam , index) => {
+    examArr.forEach((exam, index) => {
         ansArr.push(index + exam.answer);
-    })
-
-    function printAns(name , value){
-        userAns.set(name , value);
+    });
+    
+    function getUserAnsHandler(name, value) {
+        userAns.set(name, value);
     }
 
-    const submitHandler = () => {
-        userAns.forEach((value, key) => {
+    function evaluateAns() {
+        let updatedScore = 0;
+        finalUserAns.forEach((ans) => {
+            if (ansArr.find((ele) => ele === ans)) {
+                updatedScore++;
+            }
+        });
+        setScore(updatedScore);
+        toast.success(updatedScore);
+    }
+    
+    function submitHandler(){
+        userAns.forEach((value) => {
             finalUserAns.push(value);
         });
-        console.log(finalUserAns)
-        console.log(ansArr)
-        // userAns.clear();
-        // finalUserAns.splice(0, finalUserAns.length);
-        // ansArr.splice(0, ansArr.length);
-        // console.log(ansArr + finalUserAns + userAns)
-    };
+        console.log(finalUserAns);
+        console.log(ansArr);
+        evaluateAns();
+    }
 
     return (
         <div className="mainExam">
@@ -46,14 +60,14 @@ export default function MainExam({examCategory , filteredData}){
                 <h5>Exam Type : {examCategory}</h5>
                 <button type="button" id="exam-Btn" value='Submit' onClick={submitHandler}>End Test</button>
             </div>
-            <hr style={{height : "0.5px" , backgroundColor : "#393d3f"}}></hr>
-            <Questions examArr={examArr} print={printAns}></Questions>
-            <hr style={{height : "0.5px" , backgroundColor : "#393d3f" , marginTop : "2.5vw"}}></hr>
+            <hr style={{ height: "0.5px", backgroundColor: "#393d3f" }}></hr>
+            <Questions examArr={examArr} getUserAns={getUserAnsHandler}></Questions>
+            <hr style={{ height: "0.5px", backgroundColor: "#393d3f", marginTop: "2.5vw" }}></hr>
             <div id="justForFlex">
                 <button type="button" id="exam-Btn-cancel" value='cancel'>Cancel Test</button>
                 <button type="button" id="exam-Btn" value='Submit' onClick={submitHandler}>End Test</button>
             </div>
-            <hr style={{height : "0.5px" , backgroundColor : "#393d3f"}}></hr>
+            <hr style={{ height: "0.5px", backgroundColor: "#393d3f" }}></hr>
         </div>
     )
 }
