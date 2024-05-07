@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import MainExam from './mainExam'
 import './examTime.css'
-export default function ExamTime({examCategory , filteredData , setstartExam , startExam , dashboardScorePasssedHandler5}){
+export default function ExamTime({examCategory , filteredData , setstartExam , startExam , setUser}){
     const [sec , setSec] = useState(0);
     const [min , setMin] = useState(0);
     const [hour , setHour] = useState(0);
@@ -26,10 +26,6 @@ export default function ExamTime({examCategory , filteredData , setstartExam , s
     , [sec , min , hour]
     );
 
-    function dashboardScorePasssedHandler6(getscore){
-        dashboardScorePasssedHandler5(getscore)
-    }
-
     if(!startExam){
         setHour(0);
         setMin(0);
@@ -37,7 +33,7 @@ export default function ExamTime({examCategory , filteredData , setstartExam , s
     }
 
     useEffect(()=>{
-        setRender(<MainExam setstartExam = {setstartExam} startExam = {startExam} examCategory = {examCategory} filteredData = {filteredData} dashboardScorePasssedHandler7 = {dashboardScorePasssedHandler6}></MainExam>);
+        setRender(<MainExam setstartExam = {setstartExam} startExam = {startExam} examCategory = {examCategory} filteredData = {filteredData} setUser = {setUser}></MainExam>);
     } , [])
 
     return (

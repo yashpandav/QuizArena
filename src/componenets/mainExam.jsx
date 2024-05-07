@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-export default function MainExam({ examCategory, filteredData , startExam , setstartExam , dashboardScorePasssedHandler7}) {
+export default function MainExam({ examCategory, filteredData, startExam, setstartExam, setUser }) {
     const [examArr, setExamArr] = useState([]);
     const [score, setScore] = useState(0);
     const userAns = new Map();
@@ -26,7 +26,7 @@ export default function MainExam({ examCategory, filteredData , startExam , sets
             }
         }
         setScore(0);
-    }, []); 
+    }, []);
 
     examArr.forEach((exam, index) => {
         ansArr.push(index + exam.answer);
@@ -44,30 +44,42 @@ export default function MainExam({ examCategory, filteredData , startExam , sets
             }
         });
         setScore(updatedScore);
-        toast.success(`Your score is ${updatedScore} out of 10 ` , 
-                {
-                className: "exam-score", 
+        toast.success(`Your score is ${updatedScore} out of 10 `,
+            {
+                className: "exam-score",
             }
         );
-        dashboardScorePasssedHandler7(updatedScore);
+
+        const date = new Date();
+        const month = date.getMonth() + 1;
+        const dashboardData = {
+            date: `${date.getDate()}/${month}/${date.getFullYear()}`,
+            examCategory: examCategory,
+            score: updatedScore,
+        };
+
+        setUser((prev) => ({
+            ...prev,
+            dashboard: [...prev.dashboard, dashboardData],
+        }));
+
         setstartExam(false);
         setTimeout(() => {
             navigate('/exam');
-        } , 1000)
+        }, 1000)
     }
 
-    function submitHandler(){
+    function submitHandler() {
         userAns.forEach((value) => {
             finalUserAns.push(value);
         });
         evaluateAns();
     }
 
-    function cancelExamHandler(){
+    function cancelExamHandler() {
         let c = window.confirm("Are You Sure Want to cancel ? Your marks will be calculated as 0");
-        if(c){
+        if (c) {
             setScore(0);
-            dashboardScorePasssedHandler7(0);
             setstartExam(false);
             navigate('/exam');
         }

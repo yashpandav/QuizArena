@@ -74,7 +74,6 @@ export default function Login({isLogin , setLogin , userHandler}){
                     return;
                 }
                 else{
-                    console.log(mainData[getKey]);
                     setLogin(true);
                     navigate('/');
                     toast.success("Login Success");

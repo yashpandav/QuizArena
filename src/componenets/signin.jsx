@@ -18,7 +18,7 @@ export default function Signin() {
         email : "" ,
         confmpasswd : "",
         userName : "",
-        dashboard : ""
+        dashboard : []
     });
 
     useEffect(() => {
