@@ -4,11 +4,11 @@ import './exam.css';
 import { Link, useNavigate } from 'react-router-dom';
 import TimeCounter from './TimeCounter.jsx';
 
-export default function Exam({ isLogin , setNavigation , showNavigation}) {
+export default function Exam({ isLogin , setNavigation , dashboardScorePasssedHandler , setDashboardData}) {
     const [examCategory, setCategory] = useState('');
     const [startExam, setstartExam] = useState(false);
     const [filteredData, setFilteredData] = useState([]);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     useEffect(() => {
         const filtered = data.filter(item => {
             if (examCategory === 'All') return true;
@@ -16,21 +16,34 @@ export default function Exam({ isLogin , setNavigation , showNavigation}) {
         });
         setFilteredData(filtered);
     }, [examCategory]);
-
-    function startExamHandler() {
-        setNavigation(false);
-        setstartExam(true);
-    }
-
+    
     if(!startExam){
         setNavigation(true);
+    } 
+
+    function startExamHandler() {
+        let date = new Date()
+        let month = date.getMonth();
+        month = month + 1;
+        setNavigation(false);
+        setstartExam(true);
+        setDashboardData((prev) =>{
+            return{
+                ...prev ,
+                date : date.getDate() + " " + month + " " + date.getFullYear()
+            }
+        })
     }
+
+    function dashboardScorePasssedHandler2(getScore){
+        dashboardScorePasssedHandler(getScore)
+    }   
 
     return isLogin ? (
         <div id='exam'>
                     {startExam ? ( 
                         <>
-                        <TimeCounter startExam = {startExam} setstartExam = {setstartExam} examCategory = {examCategory} filteredData = {filteredData}></TimeCounter>
+                        <TimeCounter startExam = {startExam} setstartExam = {setstartExam} examCategory = {examCategory} filteredData = {filteredData} dashboardScorePasssedHandler3 =  {dashboardScorePasssedHandler2}></TimeCounter>
                         </>
 ) :  <div id='exam-btns'>
         <button className='quiz-btn' onClick={() => { setCategory('DSA'); startExamHandler(); }}>Take DSA Quiz</button>

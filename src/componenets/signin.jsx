@@ -17,7 +17,8 @@ export default function Signin() {
         number : "",
         email : "" ,
         confmpasswd : "",
-        userName : ""
+        userName : "",
+        dashboard : ""
     });
 
     useEffect(() => {
@@ -31,7 +32,6 @@ export default function Signin() {
                 }
             });
         }
-
         setAccountExist(accountExists);
     }, [userData.email, userData.number]);
 
@@ -65,19 +65,16 @@ export default function Signin() {
     function submitHandler(event) {
         event.preventDefault();
 
-        // Account already exists
         if (accountMatched) {
             toast.error("Account already exists");
             return;
         }
 
-        // Passwords don't match
         if (currPaswd !== confmPasswd) {
             toast.error("Password didn't match");
             return;
         }
 
-        // Submission
         const mainData = JSON.parse(localStorage.getItem("user")) || {};
         const updatedMainData = { ...mainData, [userData.userName]: userData };
         localStorage.setItem("user", JSON.stringify(updatedMainData));

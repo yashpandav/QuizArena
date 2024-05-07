@@ -4,7 +4,7 @@ import { useState} from 'react';
 import { toast } from "react-hot-toast";
 import { useNavigate } from 'react-router-dom';
 
-export default function Login({isLogin , setLogin}){
+export default function Login({isLogin , setLogin , userHandler}){
     const navigate = useNavigate();
 
     const [showpaswd, setshow] = useState(false);
@@ -74,9 +74,11 @@ export default function Login({isLogin , setLogin}){
                     return;
                 }
                 else{
+                    console.log(mainData[getKey]);
                     setLogin(true);
-                    navigate('/dashboard');
+                    navigate('/');
                     toast.success("Login Success");
+                    userHandler(mainData[getKey]);
                 }
             } 
         }

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-export default function MainExam({ examCategory, filteredData , startExam , setstartExam}) {
+export default function MainExam({ examCategory, filteredData , startExam , setstartExam , dashboardScorePasssedHandler7}) {
     const [examArr, setExamArr] = useState([]);
     const [score, setScore] = useState(0);
     const userAns = new Map();
@@ -49,7 +49,7 @@ export default function MainExam({ examCategory, filteredData , startExam , sets
                 className: "exam-score", 
             }
         );
-        
+        dashboardScorePasssedHandler7(updatedScore);
         setstartExam(false);
         setTimeout(() => {
             navigate('/exam');
@@ -60,9 +60,17 @@ export default function MainExam({ examCategory, filteredData , startExam , sets
         userAns.forEach((value) => {
             finalUserAns.push(value);
         });
-        console.log(finalUserAns);
-        console.log(ansArr);
         evaluateAns();
+    }
+
+    function cancelExamHandler(){
+        let c = window.confirm("Are You Sure Want to cancel ? Your marks will be calculated as 0");
+        if(c){
+            setScore(0);
+            dashboardScorePasssedHandler7(0);
+            setstartExam(false);
+            navigate('/exam');
+        }
     }
 
     return (
@@ -75,7 +83,7 @@ export default function MainExam({ examCategory, filteredData , startExam , sets
             <Questions examArr={examArr} getUserAns={getUserAnsHandler}></Questions>
             <hr style={{ height: "0.5px", backgroundColor: "#393d3f", marginTop: "2.5vw" }}></hr>
             <div id="justForFlex">
-                <button type="button" id="exam-Btn-cancel" value='cancel'>Cancel Test</button>
+                <button type="button" id="exam-Btn-cancel" value='cancel' onClick={cancelExamHandler}>Cancel Test</button>
                 <button type="button" id="exam-Btn" value='Submit' onClick={submitHandler}>End Test</button>
             </div>
             <hr style={{ height: "0.5px", backgroundColor: "#393d3f" }}></hr>

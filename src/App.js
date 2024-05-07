@@ -11,22 +11,47 @@ import PrivateRoute from "./componenets/PrivateRoute";
 import { Navigate } from "react-router-dom";
 function App() {
 
+  // const [date , setDate] = useState(new Date());s
   const [isLogin , setLogin] = useState(false);
   const [showNavigation , setNavigation] = useState(true);
+  const [userData , setUser] = useState([]);
+  const [dashboardData , setDashboardData] = useState({
+      date : "" ,
+      examCategory : "" ,
+      score : ""
+  })
 
+  useEffect(()=>{
+    setUser([])
+  } , []);
+
+  function setUserHandler(user){
+    setUser(user)
+  }
+
+  function dashboardScoreHandler(getScore){
+      console.log(getScore);
+      setDashboardData((prev) => {
+        return{
+          ...prev ,
+          score : getScore
+        }
+      })
+  }
+  
   return(
     <div className="main">
       <Navbar isLogin = {isLogin} setLogin = {setLogin} showNavigation = {showNavigation}></Navbar>
       <Routes>
         <Route path = '/' element = {<Home isLogin = {isLogin}></Home>}></Route>
-        <Route path="/login" element = {<Login isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
+        <Route path="/login" element = {<Login userHandler = {setUserHandler} isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
         <Route path="/signin" element = {<Signin isLogin = {isLogin}></Signin>}></Route>
-        <Route path="/exam" element = {<Exam isLogin = {isLogin} showNavigation = {showNavigation} setNavigation = {setNavigation}></Exam>}></Route>
+        <Route path="/exam" element = {<Exam isLogin = {isLogin} showNavigation = {showNavigation} setNavigation = {setNavigation} setDashboardData = {setDashboardData}dashboardScorePasssedHandler = {dashboardScoreHandler}></Exam>}></Route>
         {isLogin ?
-              <><Route path="/dashboard" element = {<Dashboard></Dashboard>}></Route> 
+              <><Route path="/dashboard" element = {<Dashboard userData = {userData}></Dashboard>}></Route> 
               <Route path="/userInfo" element = {<Account></Account>}></Route>
         </> 
-                  : 
+                  :
             <Route path="/login" element = {<Login isLogin = {isLogin} setLogin = {setLogin}></Login>}></Route>
         } 
         {/* <Route path='/dashboard' element={

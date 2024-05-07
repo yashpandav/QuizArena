@@ -1,5 +1,7 @@
-export default function Dashboard(){
+export default function Dashboard({userData}){
+    console.log(userData);
     return(
-        <div>Dashboard</div>
+        <div id="dashboard">
+        </div>
     );
 }
