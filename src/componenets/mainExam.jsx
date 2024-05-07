@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-export default function MainExam({ examCategory, filteredData, startExam, setstartExam, setUser }) {
+export default function MainExam({ examCategory, filteredData, startExam, setstartExam, setUser ,startDate, userData }) {
     const [examArr, setExamArr] = useState([]);
     const [score, setScore] = useState(0);
     const userAns = new Map();
@@ -35,7 +35,6 @@ export default function MainExam({ examCategory, filteredData, startExam, setsta
     function getUserAnsHandler(name, value) {
         userAns.set(name, value);
     }
-
     function evaluateAns() {
         let updatedScore = 0;
         finalUserAns.forEach((ans) => {
@@ -49,25 +48,36 @@ export default function MainExam({ examCategory, filteredData, startExam, setsta
                 className: "exam-score",
             }
         );
-
-        const date = new Date();
-        const month = date.getMonth() + 1;
+    
         const dashboardData = {
-            date: `${date.getDate()}/${month}/${date.getFullYear()}`,
+            date: startDate,
             examCategory: examCategory,
             score: updatedScore,
         };
-
+    
         setUser((prev) => ({
             ...prev,
-            dashboard: [...prev.dashboard, dashboardData],
+            dashboard: [...prev.dashboard, dashboardData], 
         }));
-
+    
+        const mainData = JSON.parse(localStorage.getItem("user"));
+        if (mainData && mainData[userData.userName]) {
+            const updatedMainData = {
+                ...mainData,
+                [userData.userName]: {
+                    ...mainData[userData.userName],
+                    dashboard: [...mainData[userData.userName].dashboard, dashboardData] 
+                }
+            };
+            localStorage.setItem("user", JSON.stringify(updatedMainData));
+        }
+    
         setstartExam(false);
         setTimeout(() => {
             navigate('/exam');
         }, 1000)
     }
+    
 
     function submitHandler() {
         userAns.forEach((value) => {

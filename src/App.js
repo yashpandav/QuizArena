@@ -23,13 +23,13 @@ export default function App() {
     dashboard: [],
   });
 
-
-  console.log(userData);
-
   function setUserHandler(user) {
     setUser(user);
   }
 
+  useEffect(() => {
+  }, [userData])
+  
   return (
     <div className="main">
       <Navbar isLogin={isLogin} setLogin={setLogin} showNavigation={showNavigation} />
@@ -48,6 +48,7 @@ export default function App() {
               showNavigation={showNavigation}
               setNavigation={setNavigation}
               setUser={setUser}
+              userData = {userData}
             />
           }
         />

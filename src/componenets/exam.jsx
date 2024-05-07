@@ -3,10 +3,12 @@ import data from '../data/data.js';
 import './exam.css';
 import { Link, useNavigate } from 'react-router-dom';
 import TimeCounter from './TimeCounter.jsx';
-export default function Exam({ isLogin, setNavigation , setUser}) {
+
+export default function Exam({ isLogin, setNavigation , setUser , userData}) {
     const [examCategory, setCategory] = useState('');
     const [startExam, setstartExam] = useState(false);
     const [filteredData, setFilteredData] = useState([]);
+    const [startDate , setStartDate] = useState('');
 
     useEffect(() => {
         const filtered = data.filter(item => {
@@ -24,6 +26,9 @@ export default function Exam({ isLogin, setNavigation , setUser}) {
         let date = new Date();
         let month = date.getMonth();
         month = month + 1;
+        setStartDate(
+            `${date.getDate()}/${month}/${date.getFullYear()}`
+        )
         setNavigation(false);
         setstartExam(true);
     }
@@ -32,7 +37,7 @@ export default function Exam({ isLogin, setNavigation , setUser}) {
         <div id='exam'>
             {startExam ? (
                 <>
-                    <TimeCounter setUser = {setUser} startExam={startExam} setstartExam={setstartExam} examCategory={examCategory} filteredData={filteredData}></TimeCounter>
+                    <TimeCounter userData = {userData} startDate = {startDate} setUser = {setUser} startExam={startExam} setstartExam={setstartExam} examCategory={examCategory} filteredData={filteredData}></TimeCounter>
                 </>
             ) : <div id='exam-btns'>
                 <button className='quiz-btn' onClick={() => { setCategory('DSA'); startExamHandler(); }}>Take DSA Quiz</button>
