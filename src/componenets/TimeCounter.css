@@ -1,0 +1,10 @@
+.time-counter {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.time-counter.active {
+    font-weight: 600;
+}

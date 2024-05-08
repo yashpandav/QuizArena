@@ -89,9 +89,8 @@ export default function Login({isLogin , setLogin , userHandler}){
 
     
     return(
-        <div id='login'>
+        <div id='login' className='login-form'>
             <img id='loginimg' src={require('../data/one.png')} alt="signup image" />
-
             <div id='loginform'>
                 <h3>
                     Log In
@@ -126,7 +125,7 @@ export default function Login({isLogin , setLogin , userHandler}){
                     }
                     <label htmlFor='passwd'name='passwd' require>Password <sup>*</sup></label>
                     <input type={showpaswd ? 'text' : 'password'} name='passwd' value={currUser.passwd} onChange={changeHandler} required />
-                    <button type='button' className='passbtn' onClick={showhandler} >
+                    <button type='button' className='loginShowBtn' onClick={showhandler} >
                                 {
                                     !showpaswd ? (
                                         <FaEye/>

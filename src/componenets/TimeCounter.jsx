@@ -1,7 +1,7 @@
 import React from "react";
 import { useState , useEffect } from "react";
 import ExamTime from "./examTime";
-
+import './TimeCounter.css'
 export default function TimeCounter({examCategory , filteredData, userData , setstartExam , startExam , setUser , startDate}){
     const [timer , setTimer] = useState(3);
 
@@ -16,6 +16,8 @@ export default function TimeCounter({examCategory , filteredData, userData , set
     }, [timer]);
 
     return (
-        timer > 0 ? <p>YOUR EXAM WILL START IN {timer}</p> : <ExamTime userData = {userData} startDate = {startDate} setUser = {setUser} startExam = {startExam} setstartExam = {setstartExam} examCategory = {examCategory} filteredData = {filteredData} ></ExamTime>
+        timer > 0 ? <div className="time-counter">
+                <p className="active">YOUR EXAM WILL START IN {timer}</p> 
+        </div> : <ExamTime userData = {userData} startDate = {startDate} setUser = {setUser} startExam = {startExam} setstartExam = {setstartExam} examCategory = {examCategory} filteredData = {filteredData} ></ExamTime>
     );
 }

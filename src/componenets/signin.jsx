@@ -107,7 +107,7 @@ export default function Signin() {
     }
 
     return (
-        <div id='signin'>
+        <div id='signin' className='sigin'>
             <div id='form'>
                 <h3>
                     <sub> Create a new account and</sub><br />
@@ -139,7 +139,7 @@ export default function Signin() {
                             <br></br>
                             <input type={showcurrPasswd ? 'text' : 'password'} value={currPaswd} name='createpasswd' onChange={(e) => setCurr(e.target.value)} required />
                             <button type='button' className='passbtn' onClick={currShowPasswdHandler} >
-                                {
+                                { 
                                     !showcurrPasswd ? (
                                         <FaEye/>
                                     ) : (

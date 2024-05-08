@@ -1,6 +1,8 @@
-.examContainer{
+.examContainer {
     color: white;
-    width: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .exam_module{
@@ -10,8 +12,22 @@
     margin-right: 8.4%;
     margin-top: 25px;
     border-radius: 5px;
+    padding-inline: 15px;
     box-shadow: 1px 1px 2.5px rgb(179, 171, 171) ,-1px 1px 2.5px rgb(179, 171, 171) ,1px -1px 2.5px rgb(179, 171, 171) ,-1px -1px 2.5px rgb(179, 171, 171);
+    animation: queAni 0.5s ease-in-out;
 }
+
+@keyframes queAni {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .que{
     font-size: 17px;

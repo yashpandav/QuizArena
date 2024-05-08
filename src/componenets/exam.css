@@ -1,15 +1,49 @@
-.quiz-btn{
-    min-width: max-content;
-    padding-inline: 3%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 15px;
+#exam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 76vh;
+    transition: all 0.5s ease;  
+    animation: examAni 0.7s ease 1; 
+}
+
+@keyframes examAni {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#exam-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+}
+
+.quiz-btn {
+    min-width: 200px;
+    padding: 10px 20px;
     border: none;
     border-radius: 10px;
+    background-color: #4361ee;
+    color: white;
+    font-size: 18px;
     text-align: center;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.quiz-btn:hover {
+    background-color: #2a2c74;
+    transform: scale(1.05);
 }
 
 .quiz-btn:nth-child(1){
-    margin-top: 3%;
+    margin-top: 10%;
 }

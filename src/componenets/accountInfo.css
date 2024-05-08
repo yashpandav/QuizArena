@@ -1,32 +1,53 @@
-#accountInfo {
-    max-width: 400px;
-    margin: 20px auto;
+.account-container {
+    max-width: fit-content;
+    margin: 50px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #161a1d;
     border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#accountInfo h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#delAccount {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all;
+    animation: accountAni 0.7s ease 1;
     color: #fff;
-    background-color: #f44336;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+  }
+  
+  @keyframes accountAni {
+    0% {
+      transform: scaleY(-10%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .account-heading {
+    font-size: 1.8rem;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  
+  .account-detail{
+    margin-top: 18px;
+  }
 
-#delAccount:hover {
-    background-color: #d32f2f;
+  .detail-label {
+    font-weight: bold;
+    color: #8ecae6; 
 }
+  
+  .delete-account-btn {
+    background-color: rgb(197, 50, 50);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 18px;
+  }
+  
+  .delete-account-btn:hover {
+    background-color: red;
+  }
+  

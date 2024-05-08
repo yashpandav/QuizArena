@@ -87,3 +87,42 @@ button[type = "reset"]{
     width: 34vw;
     padding: 30px 20px;
 }
+
+@media screen and (max-width : 768px) {
+    #signupimg{
+        display: none;
+    }     
+    #signin{
+        min-width: auto;
+    }
+
+    #form{
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+
+    #form > h3{
+        margin-right: 2px;
+        margin-left: -10px;
+        margin-bottom: 7%;
+    }
+    
+    #submit , #reset{
+        min-width : max-content;
+    }
+    
+    .toast-message {
+        padding-top: 5px;
+        padding-inline: 10px;
+        font-size: 18px;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    .passbtn{
+        position: relative;
+        top: -2.2rem;
+        left: 5rem;
+    }
+}

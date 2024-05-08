@@ -46,9 +46,9 @@ export default function Exam({ isLogin, setNavigation , setUser , userData}) {
             </div>}
         </div>
     ) : (
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', marginTop: '13px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', marginTop: '100px' , marginLeft : "43%"}}>
             <Link id='links' to='/login'>
-                <p><sub>Please Log In to give exam</sub></p>
+                <p style={{fontSize : "20px"}}><sub>Please Log In to give exam</sub></p>
             </Link>
         </div>
     );

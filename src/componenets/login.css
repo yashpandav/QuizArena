@@ -4,8 +4,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
     transition: all;
     animation: login 0.5s ease-in-out 0s 1;
 }
@@ -20,35 +18,92 @@
 }
 
 #loginimg{
+    width: 45%;
     margin-top: 10px;
     margin-left: -50px;
 } 
 
 #loginform{
-    margin-top: 0px;
+    min-width: 400px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.51);
+    margin-top: 70px;
     margin-right: 13%;
 }
 
 #loginform > h3{
-    margin-bottom: 1%;
+    font-size: 27px;
+    color: #caf0f8;
 }
 
 .emailorusername{
-    text-decoration: underline;
-    cursor: pointer;
     width: fit-content;
     height: fit-content;
     border: none;
     background-color: transparent;
-    color: whitesmoke;
     font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #4361ee;
+}
+
+.emailorusername:hover {
+    color: #00509d;
 }
 
 #forgot{
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#forgot > p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
 }
 
 #paraforgot > sub:hover{
     text-decoration: underline;
+    cursor: pointer;
+    color: #00509d;
+}
+
+login-form > input[type='text'],
+login-form > input[type='email'],
+login-form > input[type='password'] {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.loginShowBtn{
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    color: grey;
+    font-size: 18px;
+    position: relative;
+    top: 0.2rem;
+    left: -2.1rem;
+}
+
+@media (max-width: 768px) {
+    #login{
+        min-height: auto;
+    }
+
+    #loginimg{
+        display: none;
+    } 
+    
+    #loginform{
+        min-width: auto;
+        margin-top: 70px;
+        margin-inline : 20px;
+    }
 }

@@ -9,12 +9,12 @@ export default function Home({isLogin}){
                 {!isLogin ? 
                             (
                                 <div style={{display : "flex", justifyContent : 'space-between' , alignItems : "center" , flexWrap : "wrap" , marginTop : "13px"}}>
-                                <Link id='links' to = '/signin'>
-                                    <p><sub>Create a new account</sub></p>
-                                </Link>
-                                <Link id='links'to = '/login'>
-                                    <p><sub>Already have an account ? Click to login</sub></p>
-                                </Link>
+                                    <Link id='links' to = '/signin'>
+                                        <p style={{marginLeft : "5px"}}><sub>Create a new account</sub></p>
+                                    </Link>
+                                    <Link id='links'to = '/login'>
+                                        <p style={{marginRight : "3px"}}><sub>Already have an account ? Click to login</sub></p>
+                                    </Link>
                                 </div>
                             ):
                             (

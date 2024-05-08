@@ -1,96 +1,155 @@
-    
-.navbar{
-    height: 14vh;
-    /* background-color: rgba(236, 24, 24, 0.245); */
-    width: 100vw;
+.navbar {
+    min-height: 10vh;
+    background-color: #011638;
+    min-width : 100vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
-#logo{
-    border-radius: 50%;
-    width: 5vw;
-}
-
-nav{
-    width: 60vw;
+nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-#links{
+#name {
     cursor: pointer;
-    font-size: 15px;
-    color: white;
+    color: #a3cef1;
     text-decoration: none;
 }
 
-.btn{
-    background-color: rgb(27, 26, 26);
+#name:hover {
+    text-decoration: none;
+}
+
+#links {
+    cursor: pointer;
+    font-size: 15px;
+    color: #eef0f2;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link {
+    margin-top: 7px;
+    margin-right: 100px;
+}
+
+#links > h6 {
+    font-size: 18px;
+}
+
+#links:hover {
+    color: #eec643;
+}
+
+.btn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    margin-left: 10rem;
+    margin-left: auto;
+    border-radius: 50px;
+    background-color: #073b4c;
 }
 
-.btn > #links > h6{
+.btn > #links > h6 {
     cursor: pointer;
-    text-align: center;
-    margin-top: 3px;
-    margin-right: 19px;
-    margin-left: 19px;
+    margin-inline: 10px;
+    margin-top: 7px;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: color 0.2s ease;
 }
 
-#user-account{
+.btn > #links > h6:hover {
+    color: #eec643;
+}
+
+#user-account {
     cursor: pointer;
-    margin-right: -20%;
+    width: 40px;
     border-radius: 50%;
-    background-color: rgb(27, 26, 26);
-    width: 4.5vw;
+    background-color: #9f9aa4;
+    padding: 3px;
+    transition: background-color 0.3s ease;
 }
 
-.hideAccount{
+#user-account:hover {
+    background-color: #555;
+}
+
+.hideAccount {
     display: none;
 }
 
-.showAccount{
-    width: 10vw;
-    background-color: rgb(27, 26, 26);
-    transition: all;
+.showAccount {
+    width: 200px;
+    background-color: #534b52;
     position: absolute;
-    display:block;
-    animation: accountAni 0.2s ease-in 0s 1;
-    left: 77%;    
+    top: 52px;
+    right: 23px;
     border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes accountAni {
-    0%{
-        transform: translateX(-100%);
-        z-index: -50;
-        transform:translateY(-15%);
-        opacity: 0;
-    }
-    100%{
-        z-index: 10;
-        transform: translateX(14%);
-        transform:translateY(0%);
-        opacity: 100%;
-    }
-}
-
-.showAccount > p{
+.showAccount > p {
     cursor: pointer;
-    color: white;
+    color: #fff;
     text-align: left;
-    margin-top: 4.5%;
-    margin-left: 7%;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
 
-.showAccount > p:hover{
-    text-decoration: underline;
+#t {
+    margin-top: 10px;
+}
+
+.showAccount > p:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        min-width : 100%;
+        justify-content: center;
+    }
+
+    .link {
+        margin-inline: 50px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        margin-top: 7px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    #user-account {
+        margin-right: 20px;
+    }
+    
+    .showAccount {
+        width: 150px;
+        top: 80px;
+        right: 70px;
+    }
+}
+
+
+@media screen and (max-width : 430px) {
+    .showAccount {
+        width: 150px;
+        top: 100px;
+        right: 50px;
+    }
 }
