@@ -1,0 +1,44 @@
+#dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    transition: all;
+    animation: dashAni 0.7s ease 1;
+}
+
+@keyframes dashAni {
+    0%{ 
+        transform: scaleY(-10%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#dashboard h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #8ecae6;
+    text-align: left;
+}
+
+th {
+    background-color: #161a1d;  
+}
+
+tr:nth-child(even) {
+    background-color: #161a1d;
+}
+
+tr:hover {
+    background-color: #141414;
+}

@@ -55,7 +55,7 @@ export default function App() {
         {isLogin ? (
           <>
             <Route path="/dashboard" element={<Dashboard userData={userData} />} />
-            <Route path="/userInfo" element={<Account />} />
+            <Route path="/userInfo" element={<Account userData = {userData} setLogin = {setLogin} setUser = {setUser} />} />
           </>
         ) : (
           <Route path="/login" element={<Login isLogin={isLogin} setLogin={setLogin} />} />
