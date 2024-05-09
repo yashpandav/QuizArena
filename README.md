@@ -17,7 +17,7 @@ This exam project is designed to test your skills in data structures and algorit
   
 ## How to Use
 
-1. Click Here to open the page => [
+1. Click Here to open the page => [https://exam-react-khaki.vercel.app/](https://exam-react-khaki.vercel.app/)
 
    ```bash
    https://github.com/yashpandav/exam_project.git
@@ -36,7 +36,8 @@ This exam project is designed to test your skills in data structures and algorit
 
 ## Demo
 
- 👉 [CLICK HERE FOR DEMO](https://yashpandav.github.io/Currency_Converter/)
+ 👉 [CLICK HERE FOR DEMO](https://exam-react-khaki.vercel.app/)
+ 
 ![one](one.png)
 ![two](two.png)
 ![three](three.png)
