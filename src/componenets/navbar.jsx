@@ -47,7 +47,7 @@ export default function Navbar({isLogin , setLogin , showNavigation}){
                         (
                             <div className = 'btn'>
                                 <Link id='links' to='/login'><h6>Log In</h6></Link>
-                                <Link id='links' to='/signin'><h6>Sign In</h6></Link>
+                                <Link id='links' to='/signin'><h6>Sign Up</h6></Link>
                             </div>
                         )
                     }
