@@ -127,7 +127,7 @@ export default function Signin() {
                     <label htmlFor='numb' name='numb'>Contact Number <sup>*</sup>
                     </label>
                     <br></br>
-                    <input type='number' min={0} minLength={10} maxLength={10} name='number' value={userData.number} onChange={dataChangeHandler} required></input>
+                    <input type='tel' pattern="[0-9]{10}" name='number' value={userData.number} onChange={dataChangeHandler} required/>
                     <br></br>
                     <label htmlFor='email'>Email <sup>*</sup></label>
                     <br></br>
