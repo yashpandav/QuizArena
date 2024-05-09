@@ -1,4 +1,4 @@
-# Exam Project Usinf React JS
+# Exam Project Using React JS
 
 This exam project is designed to test your skills in data structures and algorithms (DSA) and technology. Additionally, it includes validation for user login and signup.
 
