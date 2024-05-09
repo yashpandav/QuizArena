@@ -90,6 +90,7 @@ export default function MainExam({ examCategory, filteredData, startExam, setsta
         let c = window.confirm("Are You Sure Want to cancel ? Your marks will be calculated as 0");
         if (c) {
             setScore(0);
+            evaluateAns();
             setstartExam(false);
             navigate('/exam');
         }
