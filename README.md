@@ -39,7 +39,7 @@ This exam project is designed to test your skills in data structures and algorit
  👉 [CLICK HERE FOR DEMO](https://exam-react-khaki.vercel.app/)
  
 ![one](home.png)
-![two](signup.png)
+![two](singup.png)
 ![three](ac.png)
 
 #### I hope that you like it. Please feel free to give me suggestion. 
