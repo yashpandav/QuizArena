@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import data from '../data/data.js';
 import './exam.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import TimeCounter from './TimeCounter.jsx';
 
 export default function Exam({ isLogin, setNavigation , setUser , userData}) {

@@ -7,7 +7,7 @@ import Dashboard from './componenets/dashboard';
 import Account from './componenets/accountInfo';
 import Exam from './componenets/exam';
 import { useEffect, useState } from 'react';
-import PrivateRoute from './componenets/PrivateRoute';
+// import PrivateRoute from './componenets/PrivateRoute';
 import { Navigate } from 'react-router-dom';
 
 export default function App() {
@@ -32,12 +32,19 @@ export default function App() {
   
   return (
     <div className="main">
-      <Navbar isLogin={isLogin} setLogin={setLogin} showNavigation={showNavigation} />
+      <Navbar 
+        isLogin={isLogin} 
+        setLogin={setLogin} 
+        showNavigation={showNavigation} />
       <Routes>
         <Route path="/" element={<Home isLogin={isLogin} />} />
         <Route
           path="/login"
-          element={<Login userHandler={setUserHandler} isLogin={isLogin} setLogin={setLogin} />}
+          element={<Login 
+                      userHandler={setUserHandler} 
+                      isLogin={isLogin}
+                      setLogin={setLogin} 
+                  />}
         />
         <Route path="/signin" element={<Signin isLogin={isLogin} />} />
         <Route

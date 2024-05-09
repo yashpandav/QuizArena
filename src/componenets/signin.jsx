@@ -24,7 +24,6 @@ export default function Signin() {
     useEffect(() => {
         const mainData = JSON.parse(localStorage.getItem("user"));
         let accountExists = false;
-        console.log(mainData)
         if (mainData) {
             Object.keys(mainData).forEach(key => {
                 if (userData.email === mainData[key].email || mainData[key].number === userData.number) {
