@@ -17,10 +17,10 @@ This exam project is designed to test your skills in data structures and algorit
   
 ## How to Use
 
-1. Click Here to open the page => 
+1. Click Here to open the page => [
 
    ```bash
-   git clone https://github.com/yashpandav/Currency_Converter.git
+   https://github.com/yashpandav/exam_project.git
 
 2. Signup : Users need to create an account by providing necessary details like username, password, and email.
 
