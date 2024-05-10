@@ -133,7 +133,7 @@ export default function Signin() {
                     <br></br>
                     <input type='email' name='email' value={userData.email} onChange={dataChangeHandler} required></input>
                     <div style={{ display: "flex", justifyContent: 'space-evenly', alignItems: "center", marginTop: "8px" }}>
-                        <div style={{ zIndex: '-100' }}>
+                        <div>
                             <label htmlFor='createpasswd'>Create New Password <sup>*</sup></label>
                             <br></br>
                             <input type={showcurrPasswd ? 'text' : 'password'} value={currPaswd} name='createpasswd' onChange={(e) => setCurr(e.target.value)} required />
